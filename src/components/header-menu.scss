@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.header-menu {
+  display: flex;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 20px;
+      font-family: roboto mono;
+      &:nth-child(5n) {
+        margin-right: 0px;
+      }
+      a {
+        color: $black;
+        font-size: 12px;
+        span {
+          margin-right: 5px;
+          color: $grey;
+        }
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}

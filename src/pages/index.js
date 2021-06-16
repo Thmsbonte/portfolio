@@ -1,28 +1,36 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Presentation from "../components/presentation"
+import About from "../components/about"
+import Projects from "../components/projects"
+import NoteworthyProjects from "../components/NoteworthyProjects"
+import Contact from "../components/Contact"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import {
+  faLinkedin,
+  faGithub,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import Career from "../components/career"
+library.add(faLinkedin, faGithub, faExternalLinkAlt, faReact)
+
+const WINDOW_HEIGHT = window.innerHeight
+const HEADER_HEIGHT = 60
+const FOOTER_HEIGHT = 60
+const SECTION_HEIGHT = ((WINDOW_HEIGHT - 60) * 85) / 100
 
 const IndexPage = () => (
-  <Layout>
+  <Layout HEADER_HEIGHT={HEADER_HEIGHT} FOOTER_HEIGHT={FOOTER_HEIGHT}>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    <Presentation SECTION_HEIGHT={WINDOW_HEIGHT} />
+    <About SECTION_HEIGHT={SECTION_HEIGHT} HEADER_HEIGHT={HEADER_HEIGHT} />
+    <Projects />
+    <NoteworthyProjects />
+    <Career />
+    <Contact SECTION_HEIGHT={WINDOW_HEIGHT - HEADER_HEIGHT - FOOTER_HEIGHT} />
   </Layout>
 )
 

@@ -1,32 +1,19 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import "./header.scss"
+import HeaderMenu from "./headerMenu"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = ({ siteTitle, HEADER_HEIGHT }) => (
+  <header className="header" style={{ height: HEADER_HEIGHT }}>
+    <div className="header-content">
+      <div className="header-left">
+        <a className="header-logo" href="http://localhost:8000/">
+          TB
+        </a>
+      </div>
+      <div className="header-right">
+        <HeaderMenu />
+      </div>
     </div>
   </header>
 )

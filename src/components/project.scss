@@ -1,0 +1,55 @@
+@import "../variables.scss";
+.project {
+  margin-top: 10px;
+  margin-bottom: 80px;
+  .project-content {
+    display: flex;
+    .project-images {
+      display: flex;
+      flex: 6;
+      justify-content: space-evenly;
+    }
+    .project-presentation {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      .project-description {
+        text-align: end;
+        margin-bottom: 10px;
+        strong {
+          font-weight: bold;
+        }
+      }
+      .project-role {
+        font-family: "roboto mono";
+        font-size: 14px;
+      }
+      .stack {
+        margin-bottom: 20px;
+        font-family: "roboto mono";
+        font-size: 14px;
+        span {
+          margin-right: 10px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .project-footer {
+        display: flex;
+        align-items: center;
+        .github-logo {
+          height: 30px;
+        }
+        .try-me {
+          font-family: "roboto mono";
+          margin-right: 20px;
+          font-size: 24px;
+          margin-bottom: 1px;
+        }
+      }
+    }
+  }
+}

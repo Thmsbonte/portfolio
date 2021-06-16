@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.footer {
+  // padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+  font-family: "roboto mono";
+  strong {
+    margin-left: 5px;
+  }
+  > a {
+    margin-left: 10px;
+  }
+}

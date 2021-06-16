@@ -10,9 +10,12 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import Footer from "./footer"
+import "./layout.scss"
+import "./layoutcontent.scss"
+import SocialNetworks from "./socialNetworks"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, HEADER_HEIGHT, FOOTER_HEIGHT }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,24 +28,21 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        HEADER_HEIGHT={HEADER_HEIGHT}
+      />
+      <div className="content">
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      </div>
+      <Footer FOOTER_HEIGHT={FOOTER_HEIGHT} />
+      <div className="email-address">
+        <p>thms.bonte@gmail.com</p>
+        <div className="fixed-trait"></div>
+      </div>
+      <div className="social-networks">
+        <SocialNetworks />
+        <div className="fixed-trait"></div>
       </div>
     </>
   )

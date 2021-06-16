@@ -1,0 +1,47 @@
+@import "../variables.scss";
+
+.about {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    .content-left {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      .table {
+        display: flex;
+        flex-direction: row;
+        .column {
+          flex: 1;
+          ul > li {
+            font-size: 16px;
+            margin-bottom: 5px;
+            line-height: 26px;
+            span {
+              margin-right: 10px;
+              color: $mainColor;
+            }
+          }
+        }
+      }
+    }
+    .content-left > p {
+      margin-bottom: 20px;
+    }
+    .content-right {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .profile-picture {
+        border-radius: 10px;
+      }
+    }
+  }
+  #projects {
+    position: absolute;
+  }
+}

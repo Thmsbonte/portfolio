@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.button {
+  border: 1px solid $mainColor;
+  font-family: "roboto mono";
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > p {
+    font-size: 14px;
+    color: $mainColor;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &:hover {
+    background-color: rgba($color: $mainColor, $alpha: 0.05);
+  }
+}
