@@ -20,8 +20,7 @@ const AchyllesStack = () => {
   return (
     <p className="stack">
       <span>
-        <a href="https://reactnative.dev/">React Native</a> with{" "}
-        <a href="https://expo.io/">Expo</a>
+        <a href="https://reactnative.dev/">React Native</a>
       </span>
       <span>-</span>
       <span>
@@ -43,11 +42,6 @@ const AchyllesImages = () => {
         width={200}
         alt="achylles-signup-screen"
       />
-      {/* <img
-        width="200"
-        alt="result-screen"
-        src="../images/Achylles/results.png"
-      /> */}
       <StaticImage
         src="../images/Achylles/details2.png"
         width={200}
@@ -72,10 +66,9 @@ const EcofoofInfoDescription = () => {
 
 const EcoFoodInfoStack = () => {
   return (
-    <p className="stack">
+    <p className="stack-reverse">
       <span>
-        <a href="https://reactnative.dev/">React Native</a> with{" "}
-        <a href="https://expo.io/">Expo</a>
+        <a href="https://reactnative.dev/">React Native</a>
       </span>
       <span>-</span>
       <span>

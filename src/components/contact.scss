@@ -9,7 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: clamp(10px, 100%, 500px);
+    > h2 {
+      @media (max-width: $smallWindow) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     > p {
       text-align: center;
     }

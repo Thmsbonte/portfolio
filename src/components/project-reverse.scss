@@ -2,12 +2,22 @@
 .project-reverse {
   margin-top: 10px;
   margin-bottom: 80px;
+  @media (max-width: $largeWindow) {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
   .project-content {
     display: flex;
+    @media (max-width: $largeWindow) {
+      flex-direction: column;
+    }
     .project-images {
       display: flex;
       flex: 6;
       justify-content: space-evenly;
+      @media (max-width: $largeWindow) {
+        margin-top: 20px;
+      }
     }
     .project-presentation {
       flex: 5;
@@ -22,7 +32,7 @@
         font-family: "roboto mono";
         font-size: 14px;
       }
-      .stack {
+      .stack-reverse {
         margin-bottom: 20px;
         font-family: "roboto mono";
         font-size: 14px;

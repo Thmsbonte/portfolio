@@ -1,22 +1,42 @@
 @import "../variables.scss";
 
-.header-menu {
+.menu {
   display: flex;
   ul {
     display: flex;
     align-items: center;
+    @media (max-width: $mediumWindow) {
+      flex-direction: column;
+    }
     li {
       margin-right: 20px;
       font-family: roboto mono;
       &:nth-child(5n) {
         margin-right: 0px;
       }
+      @media (max-width: $mediumWindow) {
+        margin-bottom: 30px;
+        margin-right: 0px;
+        &:nth-child(5n) {
+          margin-top: 20px;
+        }
+      }
       a {
         color: $black;
         font-size: 12px;
+        @media (max-width: $mediumWindow) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 18px;
+        }
         span {
           margin-right: 5px;
           color: $grey;
+          @media (max-width: $mediumWindow) {
+            margin-bottom: 10px;
+            font-size: 16px;
+          }
         }
         &:hover {
           color: $mainColor;
@@ -24,4 +44,52 @@
       }
     }
   }
+}
+
+.header-menu {
+  @media (max-width: $mediumWindow) {
+    display: none;
+  }
+}
+
+.responsive-modal {
+  position: absolute;
+  background-color: rgba($color: black, $alpha: 0.3);
+  height: 100vh;
+  width: 100vw;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+.responsive-menu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 65vw;
+  background-color: white;
+  .responsive-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    .responsive-menu-cross-icon {
+      font-size: 28px;
+    }
+  }
+  .responsive-menu-content {
+    height: calc(100% - 60px);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.responsive-menu-icon {
+  display: none;
+  @media (max-width: $mediumWindow) {
+    display: flex;
+  }
+  font-size: 28px;
 }

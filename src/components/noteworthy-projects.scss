@@ -6,5 +6,8 @@
   }
   .noteworthy-content {
     display: flex;
+    @media (max-width: $largeWindow) {
+      flex-direction: column;
+    }
   }
 }

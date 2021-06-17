@@ -16,7 +16,7 @@ const ProjectReverse = ({
         <div className="project-presentation">
           <p className="project-role">{role}</p>
           <h3>{title}</h3>
-          <p className="project-description">{description}</p>
+          {description}
           {stack}
           <a href={githubURI} target="_blank" rel="noopener noreferrer">
             <GithubLogo className="github-logo" />

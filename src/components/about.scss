@@ -7,6 +7,9 @@
   .about-content {
     display: flex;
     flex-direction: row;
+    @media (max-width: $mediumWindow) {
+      flex-direction: column;
+    }
     .content-left {
       flex: 3;
       display: flex;
@@ -36,6 +39,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-left: 30px;
+      @media (max-width: $mediumWindow) {
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+      }
       .profile-picture {
         border-radius: 10px;
       }

@@ -4,7 +4,7 @@ import "./about.scss"
 
 const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
   return (
-    <div className="about" style={{ height: SECTION_HEIGHT }}>
+    <div className="about" style={{ minHeight: SECTION_HEIGHT }}>
       <div className="about-content">
         <div className="content-left">
           <h2>

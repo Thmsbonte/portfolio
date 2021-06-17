@@ -1,42 +1,19 @@
 @import "../variables.scss";
-
-.content {
+main {
   margin: 0 auto;
+  padding: 0 150px;
   max-width: $largeWindow;
-  padding: 0 1.0875rem 1.45rem;
+  @media (max-width: $largeWindow) {
+    padding: 0 100px;
+  }
+  @media (max-width: $mediumWindow) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .title-number {
     font-family: "roboto mono";
     font-size: 20px;
     margin-right: 10px;
     color: $grey;
   }
-}
-
-.email-address {
-  position: fixed;
-  bottom: 0px;
-  right: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  > p {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-family: "roboto mono";
-    font-size: 14px;
-  }
-}
-.social-networks {
-  position: fixed;
-  bottom: 0px;
-  left: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.fixed-trait {
-  border-left: 1px solid $grey;
-  height: 120px;
-  margin-top: 30px;
 }

@@ -7,15 +7,20 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import Footer from "./footer"
 import "./layout.scss"
 import "./layoutcontent.scss"
-import SocialNetworks from "./socialNetworks"
+import { useStaticQuery, graphql } from "gatsby"
+import Header from "./header"
 
-const Layout = ({ children, HEADER_HEIGHT, FOOTER_HEIGHT }) => {
+const Layout = ({
+  children,
+  FOOTER_HEIGHT,
+  responsiveMenu,
+  setResponsiveMenu,
+  HEADER_HEIGHT,
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,25 +30,16 @@ const Layout = ({ children, HEADER_HEIGHT, FOOTER_HEIGHT }) => {
       }
     }
   `)
-
   return (
     <>
       <Header
         siteTitle={data.site.siteMetadata?.title || `Title`}
         HEADER_HEIGHT={HEADER_HEIGHT}
+        responsiveMenu={responsiveMenu}
+        setResponsiveMenu={setResponsiveMenu}
       />
-      <div className="content">
-        <main>{children}</main>
-      </div>
+      <main id="app-root">{children}</main>
       <Footer FOOTER_HEIGHT={FOOTER_HEIGHT} />
-      <div className="email-address">
-        <p>thms.bonte@gmail.com</p>
-        <div className="fixed-trait"></div>
-      </div>
-      <div className="social-networks">
-        <SocialNetworks />
-        <div className="fixed-trait"></div>
-      </div>
     </>
   )
 }

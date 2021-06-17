@@ -18,9 +18,7 @@ const DescriptionMarvel = () => {
 const StackMarvel = () => {
   return (
     <div className="stack">
-      <p>React</p>
-      <p>Node.js</p>
-      <p>MongoDB</p>
+      <p>React Node.js MongoDB</p>
     </div>
   )
 }
@@ -41,9 +39,9 @@ const DescriptionCertification = () => {
 const StackCertification = () => {
   return (
     <div className="stack">
-      <p>React</p>
-      <p>Node.js</p>
-      <p>MongoDB</p>
+      <p>React Node.js MongoDB</p>
+      {/* <p>Node.js</p>
+      <p>MongoDB</p> */}
     </div>
   )
 }
