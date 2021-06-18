@@ -24,19 +24,19 @@ library.add(faLinkedin, faGithub, faExternalLinkAlt, faReact, faBars, faTimes)
 
 const IndexPage = () => {
   const [WINDOW_HEIGHT, setWINDOW_HEIGHT] = React.useState(760) // Default windows height
-  const [responsiveMenu, setResponsiveMenu] = React.useState(false)
+  // const [responsiveMenu, setResponsiveMenu] = React.useState(false)
 
   React.useEffect(() => {
     setWINDOW_HEIGHT(window.innerHeight)
   }, [])
 
-  React.useEffect(() => {
-    if (responsiveMenu) {
-      document.getElementById("app-root").style.filter = "blur(5px)"
-    } else {
-      document.getElementById("app-root").style.filter = "blur(0px)"
-    }
-  }, [responsiveMenu])
+  // React.useEffect(() => {
+  //   if (responsiveMenu) {
+  //     document.getElementById("app-root").style.filter = "blur(5px)"
+  //   } else {
+  //     document.getElementById("app-root").style.filter = "blur(0px)"
+  //   }
+  // }, [responsiveMenu])
 
   const HEADER_HEIGHT = 60
   const FOOTER_HEIGHT = 60
@@ -44,12 +44,7 @@ const IndexPage = () => {
 
   return (
     <FixedLayout>
-      <Layout
-        FOOTER_HEIGHT={FOOTER_HEIGHT}
-        responsiveMenu={responsiveMenu}
-        setResponsiveMenu={setResponsiveMenu}
-        HEADER_HEIGHT={HEADER_HEIGHT}
-      >
+      <Layout FOOTER_HEIGHT={FOOTER_HEIGHT} HEADER_HEIGHT={HEADER_HEIGHT}>
         <Seo title="Home" />
         <Presentation SECTION_HEIGHT={WINDOW_HEIGHT} />
         <About SECTION_HEIGHT={SECTION_HEIGHT} HEADER_HEIGHT={HEADER_HEIGHT} />

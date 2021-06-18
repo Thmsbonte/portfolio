@@ -75,7 +75,7 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
           />
         </div>
       </div>
-      <div id="projects" style={{ bottom: HEADER_HEIGHT + 10 }}></div>
+      <div id="projects" style={{ bottom: HEADER_HEIGHT + 30 }}></div>
     </div>
   )
 }

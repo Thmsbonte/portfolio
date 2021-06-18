@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import "./header.scss"
 import HeaderMenu from "./headerMenu"
 
-const Header = ({ HEADER_HEIGHT, responsiveMenu, setResponsiveMenu }) => (
+const Header = ({ HEADER_HEIGHT }) => (
   <header className="header" style={{ height: HEADER_HEIGHT }}>
     <div className="header-content">
       <div className="header-left">
@@ -12,11 +12,7 @@ const Header = ({ HEADER_HEIGHT, responsiveMenu, setResponsiveMenu }) => (
         </a>
       </div>
       <div className="header-right">
-        <HeaderMenu
-          HEADER_HEIGHT={HEADER_HEIGHT}
-          responsiveMenu={responsiveMenu}
-          setResponsiveMenu={setResponsiveMenu}
-        />
+        <HeaderMenu HEADER_HEIGHT={HEADER_HEIGHT} />
       </div>
     </div>
   </header>

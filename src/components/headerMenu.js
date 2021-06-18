@@ -3,42 +3,73 @@ import "./header-menu.scss"
 import Button from "./Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Menu = () => {
-  return (
-    <nav className="menu">
-      <ul>
-        <li>
-          <a href="#about">
-            <span>01.</span>About
-          </a>
-        </li>
-        <li>
-          <a href="#projects">
-            <span>02.</span>Projects
-          </a>
-        </li>
-        <li>
-          <a href="#career">
-            <span>03.</span>Career
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <span>04.</span>Contact
-          </a>
-        </li>
-        <li>
-          <a type="button" href="/src/files/CV-ThomasBonte.pdf" download>
-            <Button text="Resume" style={{ height: 35 }} />
-          </a>
-        </li>
-      </ul>
-    </nav>
-  )
-}
+const HeaderMenu = ({ HEADER_HEIGHT }) => {
+  const [responsiveMenu, setResponsiveMenu] = React.useState(false)
 
-const HeaderMenu = ({ HEADER_HEIGHT, responsiveMenu, setResponsiveMenu }) => {
-  // const [responsiveMenu, setResponsiveMenu] = React.useState(false)
+  React.useEffect(() => {
+    if (responsiveMenu) {
+      document.getElementById("app-root").style.filter = "blur(5px)"
+    } else {
+      document.getElementById("app-root").style.filter = "blur(0px)"
+    }
+  }, [responsiveMenu])
+
+  const Menu = () => {
+    return (
+      <nav className="menu">
+        <ul>
+          <li>
+            <a href="#about" onClick={() => setResponsiveMenu(false)}>
+              <span>01.</span>About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              onClick={() => {
+                setResponsiveMenu(false)
+              }}
+            >
+              <span>02.</span>Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#career"
+              onClick={() => {
+                setResponsiveMenu(false)
+              }}
+            >
+              <span>03.</span>Career
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              onClick={() => {
+                setResponsiveMenu(false)
+              }}
+            >
+              <span>04.</span>Contact
+            </a>
+          </li>
+          <li>
+            <a
+              type="button"
+              href="/src/files/CV-ThomasBonte.pdf"
+              download
+              onClick={() => {
+                setResponsiveMenu(false)
+              }}
+            >
+              <Button text="Resume" style={{ height: 35 }} />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    )
+  }
+
   return (
     <>
       {responsiveMenu ? (
@@ -69,7 +100,7 @@ const HeaderMenu = ({ HEADER_HEIGHT, responsiveMenu, setResponsiveMenu }) => {
         </button>
       )}
       <div className="header-menu">
-        <Menu />
+        <Menu setResponsiveMenu={setResponsiveMenu} />
       </div>
     </>
   )

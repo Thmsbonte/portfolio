@@ -14,13 +14,7 @@ import "./layoutcontent.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
-const Layout = ({
-  children,
-  FOOTER_HEIGHT,
-  responsiveMenu,
-  setResponsiveMenu,
-  HEADER_HEIGHT,
-}) => {
+const Layout = ({ children, FOOTER_HEIGHT, HEADER_HEIGHT }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -35,8 +29,6 @@ const Layout = ({
       <Header
         siteTitle={data.site.siteMetadata?.title || `Title`}
         HEADER_HEIGHT={HEADER_HEIGHT}
-        responsiveMenu={responsiveMenu}
-        setResponsiveMenu={setResponsiveMenu}
       />
       <main id="app-root">{children}</main>
       <Footer FOOTER_HEIGHT={FOOTER_HEIGHT} />
