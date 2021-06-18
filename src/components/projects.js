@@ -8,10 +8,9 @@ import { StaticImage } from "gatsby-plugin-image"
 const AchyllesDescription = () => {
   return (
     <p className="project-description">
-      MVP of a mobile application for French real estate company Achylles. With
-      a multi-step search form and a tinder-like results display this app's
-      ambition is to offer an innovative way to look for your next new-build
-      investment.
+      Cross-platform mobile application for French real estate company Achylles.
+      With a multi-step search form and tinder-like results, this app's ambition
+      is to offer an innovative way to look for your next new-build investment.
     </p>
   )
 }
@@ -20,15 +19,33 @@ const AchyllesStack = () => {
   return (
     <p className="stack">
       <span>
-        <a href="https://reactnative.dev/">React Native</a>
+        <a
+          href="https://reactnative.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React Native
+        </a>
       </span>
       <span>-</span>
       <span>
-        <a href="https://nodejs.org/en/">Node.js</a>
+        <a
+          href="https://nodejs.org/en/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Node.js
+        </a>
       </span>
       <span>-</span>
       <span>
-        <a href="https://www.mongodb.com/">MongoDB</a>
+        <a
+          href="https://www.mongodb.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MongoDB
+        </a>
       </span>
     </p>
   )
@@ -55,11 +72,21 @@ const AchyllesImages = () => {
 const EcofoofInfoDescription = () => {
   return (
     <p className="project-description">
-      MVP of a mobile application developed as part of a React Native and
-      TypeScript practicing journey. With its scan feature, the app aim to offer
-      an easy way to access to the{" "}
-      <a href={"https://docs.score-environnemental.com/"}>Éco-score</a> of a
-      product. Inspired by <a href="https://yuka.io/">Yuka</a>.
+      Cross-platform mobile application developed as part of a sensibilization
+      project to product consumption. With its scan feature, the app aim to
+      offer an easy way to access to the{" "}
+      <a
+        href="https://docs.score-environnemental.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Éco-score
+      </a>{" "}
+      of a product. Inspired by{" "}
+      <a href="https://yuka.io/" target="_blank" rel="noopener noreferrer">
+        Yuka
+      </a>
+      .
     </p>
   )
 }
@@ -68,15 +95,33 @@ const EcoFoodInfoStack = () => {
   return (
     <p className="stack-reverse">
       <span>
-        <a href="https://reactnative.dev/">React Native</a>
+        <a
+          href="https://reactnative.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React Native
+        </a>
       </span>
       <span>-</span>
       <span>
-        <a href="https://www.typescriptlang.org/">TypeScript</a>
+        <a
+          href="https://www.typescriptlang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TypeScript
+        </a>
       </span>
       <span>-</span>
       <span>
-        <a href="https://nodejs.org/en/">Node.js</a>
+        <a
+          href="https://nodejs.org/en/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Node.js
+        </a>
       </span>
     </p>
   )
@@ -103,12 +148,10 @@ const EcoFoodInfoImages = () => {
 const VintedDescription = () => {
   return (
     <p className="project-description">
-      Partial clone of Vinted website realized while learning React. Contains
-      following features : <strong>Login</strong> and <strong>Signup</strong>,{" "}
-      <strong>Publish</strong> and <strong>Modify</strong> an offer,{" "}
-      <strong>Search </strong>
-      with filters, <strong>Pay</strong> and buy with Stripe. Mobile{" "}
-      <strong>Responsive</strong>.
+      Partial clone of Vinted website developed as part of a React practicing
+      journey. Contains following features : Login and Signup, Publish and{" "}
+      Modify an offer, Search with filters, Pay and buy with Stripe. Mobile{" "}
+      Responsive.
     </p>
   )
 }
@@ -117,15 +160,33 @@ const VintedStack = () => {
   return (
     <p className="stack">
       <span>
-        <a href="https://fr.reactjs.org/">React</a>
+        <a
+          href="https://fr.reactjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React
+        </a>
       </span>
       <span>-</span>
       <span>
-        <a href="https://nodejs.org/en/">Node.js</a>
+        <a
+          href="https://nodejs.org/en/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Node.js
+        </a>
       </span>
       <span>-</span>
       <span>
-        <a href="https://www.mongodb.com/">MongoDB</a>
+        <a
+          href="https://www.mongodb.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MongoDB
+        </a>
       </span>
     </p>
   )

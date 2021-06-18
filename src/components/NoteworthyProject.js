@@ -21,7 +21,7 @@ const NoteworthyProject = ({ title, description, stack, githubURI, tryMe }) => {
                 <FontAwesomeIcon icon="external-link-alt" />
               </a>
             )}
-            <a href={githubURI}>
+            <a href={githubURI} target="_blank" rel="noopener noreferrer">
               <GithubLogo className="github-logo" />
             </a>
           </div>

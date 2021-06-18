@@ -34,6 +34,10 @@
           text-align: start;
         }
         margin-bottom: 10px;
+        margin-left: 20px;
+        @media (max-width: $largeWindow) {
+          margin-left: 0px;
+        }
         strong {
           font-weight: bold;
         }

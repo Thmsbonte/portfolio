@@ -2,9 +2,12 @@ import * as React from "react"
 import "./social-networks.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const SocialNetworks = () => {
+const SocialNetworks = ({ flexDirection }) => {
   return (
-    <div className="social-networks-content">
+    <div
+      className="social-networks-content"
+      style={{ flexDirection: flexDirection }}
+    >
       <a
         href="https://github.com/Thmsbonte"
         target="_blank"

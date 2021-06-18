@@ -1,49 +1,47 @@
 @import "../variables.scss";
 
-.fixed-layout {
+.fixed-trait {
+  border-left: 1px solid $grey;
+  height: 120px;
+  margin-top: 30px;
+}
+.email-address {
+  z-index: 2;
   position: fixed;
-  left: 0px;
-  right: 0px;
   bottom: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 50px;
+  right: 50px;
   @media (max-width: $largeWindow) {
-    padding: 0 20px;
+    right: 20px;
   }
-  .fixed-trait {
-    border-left: 1px solid $grey;
-    height: 120px;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: "roboto mono";
+    font-size: 14px;
   }
-  .email-address {
-    bottom: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    > p {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      font-family: "roboto mono";
-      font-size: 14px;
-    }
-    @media (max-width: $largeWindow) {
-    }
-    @media (max-width: $mediumWindow) {
-      display: none;
-    }
+  @media (max-width: $largeWindow) {
   }
-  .social-networks {
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (max-width: $largeWindow) {
-    }
-    @media (max-width: $mediumWindow) {
-      display: none;
-    }
+  @media (max-width: $mediumWindow) {
+    display: none;
+  }
+}
+.social-networks {
+  z-index: 2;
+  position: fixed;
+  bottom: 0px;
+  left: 50px;
+  @media (max-width: $largeWindow) {
+    left: 20px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: $largeWindow) {
+  }
+  @media (max-width: $mediumWindow) {
+    display: none;
   }
 }

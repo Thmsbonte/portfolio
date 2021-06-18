@@ -2,9 +2,13 @@
 
 .social-networks-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   a {
     margin-top: 10px;
+    @media (max-width: $mediumWindow) {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
   }
 }

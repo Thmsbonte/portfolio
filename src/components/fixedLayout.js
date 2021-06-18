@@ -9,7 +9,7 @@ const FixedLayout = ({ children }) => {
     <>
       <div className="fixed-layout">
         <div className="social-networks">
-          <SocialNetworks />
+          <SocialNetworks flexDirection="column" />
           <div className="fixed-trait"></div>
         </div>
         <div className="email-address">

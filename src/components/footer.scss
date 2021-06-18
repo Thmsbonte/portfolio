@@ -3,9 +3,9 @@
 .footer {
   padding: 0 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-size: 14px;
   font-family: "roboto mono";
   strong {
@@ -13,5 +13,17 @@
   }
   > a {
     margin-left: 10px;
+  }
+  .footer-top {
+    display: none;
+    margin-bottom: 10px;
+    @media (max-width: $mediumWindow) {
+      display: flex;
+    }
+  }
+  .footer-bottom {
+    @media (max-width: $mediumWindow) {
+      margin-bottom: 20px;
+    }
   }
 }

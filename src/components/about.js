@@ -14,9 +14,15 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
           <p>
             Graduated as a computer science engineer in 2014, I worked 5 five
             years as a digital and emerging technologies consultant at{" "}
-            <a href="https://www.wavestone.com/fr/">Wavestone</a> before
-            embracing my interest in web development and becoming a full-time
-            software developer.
+            <a
+              href="https://www.wavestone.com/fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Wavestone
+            </a>{" "}
+            before embracing my interest in web development and becoming a
+            full-time software developer.
           </p>
           <p>
             Benefiting from my consulting experience, I aim to offer both
@@ -47,14 +53,14 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
                   <span>▹</span> React Native
                 </li>
                 <li>
-                  <span>▹</span> Jest
+                  <span>▹</span> MongoDB
                 </li>
               </ul>
             </div>
             <div className="column">
               <ul>
                 <li>
-                  <span>▹</span> Redux
+                  <span>▹</span> Jest
                 </li>
                 <li>
                   <span>▹</span> Gatsby

@@ -39,7 +39,7 @@ const IndexPage = () => {
   // }, [responsiveMenu])
 
   const HEADER_HEIGHT = 60
-  const FOOTER_HEIGHT = 60
+  const FOOTER_HEIGHT = 100
   const SECTION_HEIGHT = ((WINDOW_HEIGHT - 60) * 85) / 100
 
   return (

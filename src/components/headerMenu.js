@@ -2,6 +2,7 @@ import * as React from "react"
 import "./header-menu.scss"
 import Button from "./Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import cvThomasBonte from "../files/CV-ThomasBonte.pdf"
 
 const HeaderMenu = ({ HEADER_HEIGHT }) => {
   const [responsiveMenu, setResponsiveMenu] = React.useState(false)
@@ -54,14 +55,7 @@ const HeaderMenu = ({ HEADER_HEIGHT }) => {
             </a>
           </li>
           <li>
-            <a
-              type="button"
-              href="/src/files/CV-ThomasBonte.pdf"
-              download
-              onClick={() => {
-                setResponsiveMenu(false)
-              }}
-            >
+            <a type="button" href={cvThomasBonte} download>
               <Button text="Resume" style={{ height: 35 }} />
             </a>
           </li>
