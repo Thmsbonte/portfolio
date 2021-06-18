@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: -40px;
-    @media (max-width: $mobile) {
+    @media (max-width: $smallWindow) {
       margin-top: 30px;
     }
     h1 {
