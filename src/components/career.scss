@@ -17,9 +17,11 @@
       margin-top: 10px;
       display: flex;
       flex-direction: column;
-      // background-color: yellowgreen;
       width: 100%;
       align-items: center;
+      @media (max-width: $mediumWindow) {
+        margin-left: -10px;
+      }
       .career-journey-content {
         display: flex;
         flex-direction: column;

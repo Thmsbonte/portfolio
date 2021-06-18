@@ -78,26 +78,26 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
                   <span>▹</span> JavaScript
                 </li>
                 <li>
-                  <span>▹</span> TypeScript
+                  <span>▹</span> React
                 </li>
                 <li>
                   <span>▹</span> Node.js
                 </li>
                 <li>
-                  <span>▹</span> MongoDB
+                  <span>▹</span> Jest
                 </li>
               </ul>
             </div>
             <div className="column">
               <ul>
                 <li>
-                  <span>▹</span> React
+                  <span>▹</span> TypeScript
                 </li>
                 <li>
                   <span>▹</span> React Native
                 </li>
                 <li>
-                  <span>▹</span> Jest
+                  <span>▹</span> MongoDB
                 </li>
                 <li>
                   <span>▹</span> Gatsby
