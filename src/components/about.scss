@@ -7,7 +7,7 @@
   .about-content {
     display: flex;
     flex-direction: row;
-    @media (max-width: $mediumWindow) {
+    @media (max-width: $largeWindow) {
       flex-direction: column;
     }
     .content-left {
@@ -17,16 +17,26 @@
       .table {
         display: flex;
         flex-direction: row;
-        .column {
-          flex: 1;
-          ul > li {
-            font-size: 16px;
-            margin-bottom: 5px;
-            line-height: 26px;
-            span {
-              margin-right: 10px;
-              color: $mainColor;
-            }
+        @media (max-width: $smallWindow) {
+          display: none;
+        }
+      }
+      .table-responsive {
+        display: none;
+        @media (max-width: $smallWindow) {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      .column {
+        flex: 1;
+        ul > li {
+          font-size: 16px;
+          margin-bottom: 5px;
+          line-height: 26px;
+          span {
+            margin-right: 10px;
+            color: $mainColor;
           }
         }
       }
@@ -40,7 +50,7 @@
       align-items: center;
       justify-content: center;
       margin-left: 30px;
-      @media (max-width: $mediumWindow) {
+      @media (max-width: $largeWindow) {
         margin-left: 0px;
         margin-top: 20px;
         margin-bottom: 100px;

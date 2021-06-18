@@ -12,7 +12,6 @@ const Career = () => {
           <h2>
             <span className="title-number">03.</span>Career
           </h2>
-          {/* <p className="career-subtitle">My personal journey</p> */}
           <div className="career-journey">
             <div className="career-journey-content">
               <div className="row first-row">

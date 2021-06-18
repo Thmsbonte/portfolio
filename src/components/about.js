@@ -71,6 +71,40 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
               </ul>
             </div>
           </div>
+          <div className="table-responsive">
+            <div className="column">
+              <ul>
+                <li>
+                  <span>▹</span> JavaScript
+                </li>
+                <li>
+                  <span>▹</span> TypeScript
+                </li>
+                <li>
+                  <span>▹</span> Node.js
+                </li>
+                <li>
+                  <span>▹</span> MongoDB
+                </li>
+              </ul>
+            </div>
+            <div className="column">
+              <ul>
+                <li>
+                  <span>▹</span> React
+                </li>
+                <li>
+                  <span>▹</span> React Native
+                </li>
+                <li>
+                  <span>▹</span> Jest
+                </li>
+                <li>
+                  <span>▹</span> Gatsby
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="content-right">
           <StaticImage
