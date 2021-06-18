@@ -77,7 +77,7 @@ const HeaderMenu = ({ HEADER_HEIGHT }) => {
                 className="responsive-menu-cross-icon"
                 onClick={() => setResponsiveMenu(!responsiveMenu)}
               >
-                <FontAwesomeIcon icon="times" />
+                <FontAwesomeIcon icon="times" className="icon" />
               </button>
             </div>
             <div className="responsive-menu-content">
@@ -90,7 +90,7 @@ const HeaderMenu = ({ HEADER_HEIGHT }) => {
           className="responsive-menu-icon"
           onClick={() => setResponsiveMenu(!responsiveMenu)}
         >
-          <FontAwesomeIcon icon="bars" />
+          <FontAwesomeIcon icon="bars" className="icon" />
         </button>
       )}
       <div className="header-menu">
