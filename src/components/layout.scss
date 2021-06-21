@@ -142,6 +142,7 @@ textarea {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 html {
@@ -272,4 +273,7 @@ p {
 }
 a {
   color: $mainColor;
+}
+strong {
+  font-weight: bold;
 }

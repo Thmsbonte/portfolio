@@ -203,42 +203,46 @@ const VintedImages = () => {
   )
 }
 
-const Projects = () => {
+const Projects = ({ expoModal, setExpoModal }) => {
   return (
-    <div className="projects">
-      <div className="projects-content">
-        <h2>
-          {" "}
-          <span className="title-number">02.</span>Projects
-        </h2>
-        <Project
-          role={"Technical lead"}
-          title={"Achylles App"}
-          description={<AchyllesDescription />}
-          stack={<AchyllesStack />}
-          githubURI={"https://github.com/Thmsbonte/Achylles-Application"}
-          images={<AchyllesImages />}
-        />
-        <ProjectReverse
-          role={"Full-Stack developer"}
-          title={"Eco-FoodInfo"}
-          description={<EcofoofInfoDescription />}
-          stack={<EcoFoodInfoStack />}
-          githubURI={"https://github.com/Thmsbonte/EFI-frontend"}
-          images={<EcoFoodInfoImages />}
-          tryMe={"https://expo.io/@ecofoodinfo/Eco-FoodInfo"}
-        />
-        <Project
-          role={"Full-Stack developer"}
-          title={"Vinted clone"}
-          description={<VintedDescription />}
-          stack={<VintedStack />}
-          githubURI={"https://github.com/Thmsbonte/vinted-frontend"}
-          images={<VintedImages />}
-          tryMe="https://thmsbonte-vinted.netlify.app/"
-        />
+    <>
+      <div className="projects">
+        <div className="projects-content">
+          <h2>
+            {" "}
+            <span className="title-number">02.</span>Projects
+          </h2>
+          <Project
+            role={"Technical lead"}
+            title={"Achylles App"}
+            description={<AchyllesDescription />}
+            stack={<AchyllesStack />}
+            githubURI={"https://github.com/Thmsbonte/Achylles-Application"}
+            images={<AchyllesImages />}
+          />
+          <ProjectReverse
+            role={"Full-Stack developer"}
+            title={"Eco-FoodInfo"}
+            description={<EcofoofInfoDescription />}
+            stack={<EcoFoodInfoStack />}
+            githubURI={"https://github.com/Thmsbonte/EFI-frontend"}
+            images={<EcoFoodInfoImages />}
+            expoGo={"https://expo.io/@ecofoodinfo/Eco-FoodInfo"}
+            setExpoModal={setExpoModal}
+            expoModal={expoModal}
+          />
+          <Project
+            role={"Full-Stack developer"}
+            title={"Vinted clone"}
+            description={<VintedDescription />}
+            stack={<VintedStack />}
+            githubURI={"https://github.com/Thmsbonte/vinted-frontend"}
+            images={<VintedImages />}
+            tryMe="https://thmsbonte-vinted.netlify.app/"
+          />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

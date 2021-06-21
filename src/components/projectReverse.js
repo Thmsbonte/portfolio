@@ -12,6 +12,9 @@ const ProjectReverse = ({
   githubURI,
   images,
   tryMe = "",
+  expoGo = "",
+  setExpoModal,
+  expoModal,
 }) => {
   return (
     <div className="project project-reverse">
@@ -34,6 +37,16 @@ const ProjectReverse = ({
               >
                 <FontAwesomeIcon icon="external-link-alt" />
               </a>
+            )}
+            {expoGo && (
+              <button
+                className="try-me"
+                onClick={() => {
+                  setExpoModal(!expoModal)
+                }}
+              >
+                <FontAwesomeIcon icon="external-link-alt" />
+              </button>
             )}
           </div>
         </div>

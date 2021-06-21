@@ -11,7 +11,10 @@ const Project = ({
   stack,
   githubURI,
   images,
-  tryMe,
+  tryMe = "",
+  expoGo = "",
+  setExpoModal,
+  expoModal,
 }) => {
   return (
     <div className="project project-normal">
@@ -35,6 +38,16 @@ const Project = ({
               >
                 <FontAwesomeIcon icon="external-link-alt" />
               </a>
+            )}
+            {expoGo && (
+              <button
+                className="try-me"
+                onClick={() => {
+                  setExpoModal(!expoModal)
+                }}
+              >
+                <FontAwesomeIcon icon="external-link-alt" />
+              </button>
             )}
           </div>
         </div>
