@@ -15,7 +15,7 @@
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: clamp(20px, 550px, 90%);
-    max-height: 100%;
+    max-height: 90%;
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -35,6 +35,12 @@
       h4 {
         margin-top: 20px;
         margin-bottom: 20px;
+      }
+      .expo-modal-presentation {
+        display: block;
+        @media (max-width: $largeWindow) {
+          display: none;
+        }
       }
       .expo-button {
         display: flex;

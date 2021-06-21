@@ -3,7 +3,7 @@ import "./expoModal.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Button from "./Button"
 
-const ExpoModal = ({ setExpoModal, expoModal, expoURI }) => {
+const ExpoModal = ({ setExpoModal, expoModal }) => {
   return (
     <div className="expo-modal">
       <div className="expo-modal-content">
@@ -20,7 +20,7 @@ const ExpoModal = ({ setExpoModal, expoModal, expoURI }) => {
           <p>
             Try me with <strong>ExpoGo</strong> :
           </p>
-          <p>
+          <p className="expo-modal-presentation">
             EcoFoodInfo is not available on the stores. Yet it is possible to
             try it through <strong>ExpoGo</strong> application. Make sure you
             have it downloaded on your phone before following the instructions
@@ -29,10 +29,10 @@ const ExpoModal = ({ setExpoModal, expoModal, expoURI }) => {
           <div className="phone android">
             <h4>Android</h4>
             <p>1. Click on the link below </p>
-            <p>2. Click on the "Open in ExpoGo" link</p>
+            <p>2. Follow the page's instructions</p>
             <a
               className="expo-button"
-              href={expoURI}
+              href="https://expo.io/@ecofoodinfo/Eco-FoodInfo"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,9 +42,9 @@ const ExpoModal = ({ setExpoModal, expoModal, expoURI }) => {
           <div className="phone iphone">
             <h4>Iphone</h4>
             <p>
-              To open it with an Iphone, you unfortunately need first to connect
-              to EcoFoodInfo ExpoGo account. Email-me a request so I can share
-              with you the credentials.
+              To open it with an Iphone, you need first to connect to
+              EcoFoodInfo ExpoGo account. Email-me a request so I can share with
+              you the credentials.
             </p>
             <a className="expo-button" href="mailto:thms.bonte@gmail.com">
               <Button text="Email me" style={{ minWidth: 115 }} />
