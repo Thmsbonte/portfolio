@@ -1,5 +1,6 @@
 import * as React from "react"
 import "./project.scss"
+import "./project-normal.scss"
 import GithubLogo from "../images/github-brands.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -13,7 +14,7 @@ const Project = ({
   tryMe,
 }) => {
   return (
-    <div className="project">
+    <div className="project project-normal">
       <div className="project-content">
         {images}
         <div className="project-presentation">

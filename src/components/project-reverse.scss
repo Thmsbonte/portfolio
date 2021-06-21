@@ -1,50 +1,17 @@
 @import "../variables.scss";
 .project-reverse {
-  margin-top: 10px;
-  margin-bottom: 80px;
-  @media (max-width: $largeWindow) {
-    margin-top: 0px;
-    margin-bottom: 30px;
-  }
   .project-content {
-    display: flex;
     @media (max-width: $largeWindow) {
       flex-direction: column;
     }
-    .project-images {
-      display: flex;
-      flex: 6;
-      justify-content: space-evenly;
-      @media (max-width: $largeWindow) {
-        margin-top: 20px;
-      }
-    }
     .project-presentation {
-      flex: 5;
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
       .project-description {
         margin-bottom: 10px;
-      }
-      .project-role {
-        font-family: "roboto mono";
-        font-size: 14px;
-      }
-      .stack-reverse {
-        margin-bottom: 20px;
-        font-family: "roboto mono";
-        font-size: 14px;
-        span {
-          margin-right: 10px;
-          a {
-            font-size: 14px;
-          }
+        margin-right: 20px;
+        @media (max-width: $largeWindow) {
+          margin-right: 0px;
         }
-      }
-      .github-logo {
-        height: 30px;
       }
     }
   }

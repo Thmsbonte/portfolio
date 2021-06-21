@@ -1,0 +1,25 @@
+@import "../variables.scss";
+
+.project-normal {
+  .project-content {
+    @media (max-width: $largeWindow) {
+      flex-direction: column-reverse;
+    }
+    .project-presentation {
+      align-items: flex-end;
+      @media (max-width: $largeWindow) {
+        align-items: flex-start;
+      }
+      .project-description {
+        text-align: end;
+        @media (max-width: $largeWindow) {
+          text-align: start;
+        }
+        margin-left: 20px;
+        @media (max-width: $largeWindow) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

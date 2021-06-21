@@ -93,7 +93,7 @@ const EcofoofInfoDescription = () => {
 
 const EcoFoodInfoStack = () => {
   return (
-    <p className="stack-reverse">
+    <p className="stack">
       <span>
         <a
           href="https://reactnative.dev/"
