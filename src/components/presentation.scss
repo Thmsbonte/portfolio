@@ -21,14 +21,14 @@
     .my-name-is {
       font-family: roboto mono;
       margin-bottom: 10px;
-      color: $mainColor;
+      color: $secondColor;
     }
     .sub-my-name {
       color: $grey;
       margin-top: 10px;
       font-size: clamp(20px, 6vw, 50px);
       span {
-        color: $mainColor;
+        color: $secondColor;
       }
     }
 

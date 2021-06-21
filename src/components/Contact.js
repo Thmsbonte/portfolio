@@ -10,7 +10,7 @@ const Contact = ({ SECTION_HEIGHT }) => {
           <span className="title-number">04.</span>Get In Touch
         </h2>
         <p>
-          I'am currently looking for new opportunities as React or React Native
+          I'am currently open to new opportunities as React or React Native
           developer. Whether you are interested in my profile or you want to
           contact me for any other subject, my inbox is always open. I'll try my
           best to get back to you!

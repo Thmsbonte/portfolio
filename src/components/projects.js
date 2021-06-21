@@ -148,10 +148,9 @@ const EcoFoodInfoImages = () => {
 const VintedDescription = () => {
   return (
     <p className="project-description">
-      Partial clone of Vinted website developed as part of a React practicing
-      journey. Contains following features : Login and Signup, Publish and{" "}
-      Modify an offer, Search with filters, Pay and buy with Stripe. Mobile{" "}
-      Responsive.
+      Partial clone of Vinted website developed as part of a React and Node.js
+      practicing journey. Contains the following features : Login and Signup,
+      Publish and Modify an offer, Search with filters, Pay and buy with Stripe.
     </p>
   )
 }
