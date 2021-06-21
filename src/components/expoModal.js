@@ -42,9 +42,9 @@ const ExpoModal = ({ setExpoModal, expoModal }) => {
           <div className="phone iphone">
             <h4>Iphone</h4>
             <p>
-              To open it with an Iphone, you need first to connect to
-              EcoFoodInfo ExpoGo account. Email-me a request so I can share with
-              you the credentials.
+              To open it with an Iphone, you first need to connect to
+              EcoFoodInfo ExpoGo account. Please email-me a request so I can
+              share with you the credentials.
             </p>
             <a className="expo-button" href="mailto:thms.bonte@gmail.com">
               <Button text="Email me" style={{ minWidth: 115 }} />
