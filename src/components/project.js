@@ -23,6 +23,9 @@ const Project = ({
           {description}
           {stack}
           <div className="project-footer">
+            <a href={githubURI} target="_blank" rel="noopener noreferrer">
+              <GithubLogo className="github-logo" />
+            </a>
             {tryMe && (
               <a
                 className="try-me"
@@ -33,9 +36,6 @@ const Project = ({
                 <FontAwesomeIcon icon="external-link-alt" />
               </a>
             )}
-            <a href={githubURI} target="_blank" rel="noopener noreferrer">
-              <GithubLogo className="github-logo" />
-            </a>
           </div>
         </div>
       </div>

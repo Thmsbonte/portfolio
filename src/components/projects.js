@@ -226,6 +226,7 @@ const Projects = () => {
           stack={<EcoFoodInfoStack />}
           githubURI={"https://github.com/Thmsbonte/EFI-frontend"}
           images={<EcoFoodInfoImages />}
+          tryMe={"https://expo.io/@ecofoodinfo/Eco-FoodInfo"}
         />
         <Project
           role={"Full-Stack developer"}

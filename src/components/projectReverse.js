@@ -22,6 +22,9 @@ const ProjectReverse = ({
           {description}
           {stack}
           <div className="project-footer">
+            <a href={githubURI} target="_blank" rel="noopener noreferrer">
+              <GithubLogo className="github-logo" />
+            </a>
             {tryMe && (
               <a
                 className="try-me"
@@ -32,9 +35,6 @@ const ProjectReverse = ({
                 <FontAwesomeIcon icon="external-link-alt" />
               </a>
             )}
-            <a href={githubURI} target="_blank" rel="noopener noreferrer">
-              <GithubLogo className="github-logo" />
-            </a>
           </div>
         </div>
         {images}
