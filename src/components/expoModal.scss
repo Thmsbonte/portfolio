@@ -16,6 +16,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: clamp(20px, 550px, 90%);
     max-height: 95%;
+    overflow-y: auto;
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -36,12 +37,12 @@
         margin-top: 20px;
         margin-bottom: 15px;
       }
-      .expo-modal-presentation {
-        display: block;
-        @media (max-width: $largeWindow) {
-          display: none;
-        }
-      }
+      // .expo-modal-presentation {
+      //   display: block;
+      //   @media (max-width: $largeWindow) {
+      //     display: none;
+      //   }
+      // }
       .expo-button {
         display: flex;
         justify-content: center;
