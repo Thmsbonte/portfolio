@@ -30,25 +30,28 @@ const ExpoModal = ({ setExpoModal, expoModal }) => {
             <h4>Android</h4>
             <p>1. Click on the link below </p>
             <p>2. Follow the page's instructions</p>
-            <a
-              className="expo-button"
-              href="https://expo.io/@ecofoodinfo/Eco-FoodInfo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button text="Try me" style={{ minWidth: 115 }} />
-            </a>
+            <div className="expo-button">
+              <a
+                href="https://expo.io/@ecofoodinfo/Eco-FoodInfo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button text="Try me" style={{ minWidth: 115 }} />
+              </a>
+            </div>
           </div>
           <div className="phone iphone">
             <h4>Iphone</h4>
             <p>
-              To open it with an Iphone, you first need to connect to
+              To open it with an Iphone, you first need to connect to the
               EcoFoodInfo ExpoGo account. Please email-me a request so I can
               share with you the credentials.
             </p>
-            <a className="expo-button" href="mailto:thms.bonte@gmail.com">
-              <Button text="Email me" style={{ minWidth: 115 }} />
-            </a>
+            <div className="expo-button">
+              <a href="mailto:thms.bonte@gmail.com">
+                <Button text="Email me" style={{ minWidth: 115 }} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

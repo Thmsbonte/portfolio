@@ -12,24 +12,28 @@
   justify-content: center;
   align-items: center;
   .expo-modal-content {
+    position: relative;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: clamp(20px, 550px, 90%);
-    max-height: 95%;
-    overflow-y: auto;
+    // max-height: 95%;
     background-color: white;
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
     box-sizing: border-box;
     .expo-modal-header {
       display: flex;
       justify-content: flex-end;
-
       > button {
         color: $mainColor;
       }
     }
     .expo-modal-main {
-      margin-bottom: 20px;
+      overflow-y: auto;
+      max-height: 80vh;
+
       > p {
         margin-bottom: 20px;
       }
@@ -37,12 +41,6 @@
         margin-top: 20px;
         margin-bottom: 15px;
       }
-      // .expo-modal-presentation {
-      //   display: block;
-      //   @media (max-width: $largeWindow) {
-      //     display: none;
-      //   }
-      // }
       .expo-button {
         display: flex;
         justify-content: center;
