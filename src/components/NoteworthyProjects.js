@@ -10,7 +10,7 @@ const TitleMarvel = () => {
 const DescriptionMarvel = () => {
   return (
     <p className="description">
-      Website allowing to search in all Marvel characters and comics related.
+      A website alowing the search of all Marvel characters and related comics.
     </p>
   )
 }
@@ -31,7 +31,7 @@ const TitleCertification = () => {
 const DescriptionCertification = () => {
   return (
     <p className="description">
-      Website allowing to create and submit online forms.
+      A website permiting the creation and submission of online forms.
     </p>
   )
 }
@@ -40,8 +40,6 @@ const StackCertification = () => {
   return (
     <div className="stack">
       <p>React Node.js MongoDB</p>
-      {/* <p>Node.js</p>
-      <p>MongoDB</p> */}
     </div>
   )
 }

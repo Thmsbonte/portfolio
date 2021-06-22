@@ -7,7 +7,7 @@ const Header = ({ HEADER_HEIGHT }) => (
   <header className="header" style={{ height: HEADER_HEIGHT }}>
     <div className="header-content">
       <div className="header-left">
-        <a className="header-logo" href="http://localhost:8000/">
+        <a className="header-logo" href="https://thomasbonte.netlify.app/">
           TB
         </a>
       </div>

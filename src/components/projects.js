@@ -72,9 +72,9 @@ const AchyllesImages = () => {
 const EcofoofInfoDescription = () => {
   return (
     <p className="project-description">
-      Cross-platform mobile application developed as part of a sensibilization
-      project to product consumption. With its scan feature, the app aim to
-      offer an easy way to access to the{" "}
+      Cross-platform mobile application developed as part of a product
+      consumption awarness project. With its scan feature, the app aims to offer
+      an easy way to access to the{" "}
       <a
         href="https://docs.score-environnemental.com/"
         target="_blank"
@@ -149,7 +149,7 @@ const VintedDescription = () => {
   return (
     <p className="project-description">
       Partial clone of Vinted website developed as part of a React and Node.js
-      practicing journey. Contains the following features : Login and Signup,
+      practicing journey. It contains the following features : Login and Signup,
       Publish and Modify an offer, Search with filters, Pay and buy with Stripe.
     </p>
   )

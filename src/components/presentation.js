@@ -12,15 +12,17 @@ const Presentation = ({ SECTION_HEIGHT }) => {
           Full-Stack <span>Javascript </span>developer.
         </h1>
         <p className="presentation-text">
-          I'am a Paris-based software engineer who specialized in JavaScript and
+          I am a Paris-based software engineer specialized in JavaScript and
           TypeScript languages. I am currently open to new opportunities as a{" "}
           <a href="https://fr.reactjs.org/">React </a>
           or <a href="https://reactnative.dev/">React Native</a> software
           developer.
         </p>
-        <a href="mailto:thms.bonte@gmail.com">
-          <Button text="Get In Touch" style={{ height: 45, marginTop: 30 }} />
-        </a>
+        <div>
+          <a href="mailto:thms.bonte@gmail.com">
+            <Button text="Get In Touch" style={{ height: 45, marginTop: 30 }} />
+          </a>
+        </div>
 
         <div id="about"></div>
       </div>

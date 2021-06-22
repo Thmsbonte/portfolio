@@ -12,8 +12,8 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
             <span className="title-number">01.</span>About me
           </h2>
           <p>
-            Graduated as a computer science engineer in 2014, I worked 5 five
-            years as a digital and emerging technologies consultant at{" "}
+            After graduating as a computer science engineer in 2014, I worked 5
+            five years as a digital and emerging technologies consultant at{" "}
             <a
               href="https://www.wavestone.com/fr/"
               target="_blank"
@@ -27,7 +27,7 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
           <p>
             Benefiting from my consulting experience, I aim to offer both
             technical and organizational skills to build accessible and
-            performant product as well as enjoyable digital experience.
+            efficient products as well as enjoyable digital experiences.
           </p>
           <p>Here are a few technologies I've been working with recently: </p>
           <div className="table">

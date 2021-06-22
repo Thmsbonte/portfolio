@@ -2,7 +2,7 @@ import * as React from "react"
 import "./header-menu.scss"
 import Button from "./Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import cvThomasBonte from "../files/CV-ThomasBonte.pdf"
+import cvThomasBonte from "../files/CV_Thomas_Bonte_EN.pdf"
 
 const HeaderMenu = ({ HEADER_HEIGHT }) => {
   const [responsiveMenu, setResponsiveMenu] = React.useState(false)
