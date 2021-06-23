@@ -26,8 +26,8 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
           </p>
           <p>
             Benefiting from my consulting experience, I aim to offer both
-            technical and organizational skills to build accessible and
-            efficient products as well as enjoyable digital experiences.
+            technical and methodological skills to build high quality products
+            as well as enjoyable digital experiences.
           </p>
           <p>Here are a few technologies I've been working with recently: </p>
           <div className="table">

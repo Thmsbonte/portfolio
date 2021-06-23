@@ -24,10 +24,10 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p1">
-                    JavaScript and TypeScript Full-Stack developer
+                    Full-Stack Javascript/Typescript developer
                   </p>
                   <p className="career-text">
-                    March 2020 – June 2021 (1,5 years)
+                    Sept 2020 – June 2021 (10 months)
                   </p>
                 </div>
               </div>
@@ -56,7 +56,8 @@ const Career = () => {
                     Achylles - <span>Lead developer</span>
                   </p>
                   <p className="career-text">
-                    Mobile application for French real estate company
+                    React-Native mobile application for French real estate
+                    company
                   </p>
                 </div>
               </div>
