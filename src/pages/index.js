@@ -50,7 +50,7 @@ const IndexPage = () => {
       )}
       <FixedLayout>
         <Layout FOOTER_HEIGHT={FOOTER_HEIGHT} HEADER_HEIGHT={HEADER_HEIGHT}>
-          <Seo />
+          <Seo title="Thomas Bonte" />
           <Presentation SECTION_HEIGHT={WINDOW_HEIGHT} />
           <About
             SECTION_HEIGHT={SECTION_HEIGHT}
