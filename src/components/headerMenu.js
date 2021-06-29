@@ -2,7 +2,10 @@ import * as React from "react"
 import "./header-menu.scss"
 import Button from "./Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import cvThomasBonte from "../files/CV_Thomas_Bonte_EN.pdf"
+import cvThomasBonteEN from "../files/CV_Thomas_Bonte_EN.pdf"
+import cvThomasBonteFR from "../files/CV_Thomas_Bonte_FR.pdf"
+import { FormattedMessage, IntlContextConsumer } from "gatsby-plugin-intl"
+import Languages from "./languages"
 
 const HeaderMenu = ({ HEADER_HEIGHT }) => {
   const [responsiveMenu, setResponsiveMenu] = React.useState(false)
@@ -21,7 +24,8 @@ const HeaderMenu = ({ HEADER_HEIGHT }) => {
         <ul>
           <li>
             <a href="#about" onClick={() => setResponsiveMenu(false)}>
-              <span>01.</span>About
+              <span>01.</span>
+              <FormattedMessage id="menu.about" />
             </a>
           </li>
           <li>
@@ -31,7 +35,8 @@ const HeaderMenu = ({ HEADER_HEIGHT }) => {
                 setResponsiveMenu(false)
               }}
             >
-              <span>02.</span>Projects
+              <span>02.</span>
+              <FormattedMessage id="menu.projects" />
             </a>
           </li>
           <li>
@@ -41,7 +46,8 @@ const HeaderMenu = ({ HEADER_HEIGHT }) => {
                 setResponsiveMenu(false)
               }}
             >
-              <span>03.</span>Career
+              <span>03.</span>
+              <FormattedMessage id="menu.career" />
             </a>
           </li>
           <li>
@@ -51,13 +57,37 @@ const HeaderMenu = ({ HEADER_HEIGHT }) => {
                 setResponsiveMenu(false)
               }}
             >
-              <span>04.</span>Contact
+              <span>04.</span>
+              <FormattedMessage id="menu.contact" />
             </a>
           </li>
           <li>
-            <a type="button" href={cvThomasBonte} download>
-              <Button text="Resume" style={{ height: 35 }} />
-            </a>
+            <Languages />
+          </li>
+          <li>
+            <IntlContextConsumer>
+              {({ languages, language: currentLocale }) => {
+                if (currentLocale === "fr") {
+                  return (
+                    <a type="button" href={cvThomasBonteFR} download>
+                      <Button
+                        text={<FormattedMessage id="button.resume" />}
+                        style={{ height: 35, minWidth: 85 }}
+                      />
+                    </a>
+                  )
+                } else {
+                  return (
+                    <a type="button" href={cvThomasBonteEN} download>
+                      <Button
+                        text={<FormattedMessage id="button.resume" />}
+                        style={{ height: 35, minWidth: 85 }}
+                      />
+                    </a>
+                  )
+                }
+              }}
+            </IntlContextConsumer>
           </li>
         </ul>
       </nav>

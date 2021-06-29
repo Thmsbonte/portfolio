@@ -1,0 +1,83 @@
+{
+  "presentation": {
+    "mynameis": "Bonjour, je m'appelle",
+    "subtitle": "Développeur {Javascript} Full Stack",
+    "text": "Je suis développeur web et mobile, spécialisé en Javascript et React. Acteur de la transformation digitale, je suis actuellement à l'écoute de nouvelles opportunités en tant que développeur {React} ou {ReactNative}."
+  },
+  "button": {
+    "getintouch": "Contact",
+    "resume": "CV"
+  },
+  "menu": {
+    "about": "À propos",
+    "projects": "Projets",
+    "career": "Parcours",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "paragraphOne": "Diplômé de {ISEP} en 2014, j'ai travaillé 5 ans à {Wavestone} en tant que chef de projet IT avant d'évoluer vers le poste de développeur web et mobile en septembre 2020.",
+    "paragraphTwo": "Spécialisé en Javascript et React, j'ai la volonté d'associer une expertise technique avec des compétences IT transverses pour construire des applications performantes répondant aux enjeux de sécurité, d'accessibilité et d'évolutivité du monde du numérique.",
+    "paragraphThree": "Quelques technologies avec lesquelles j'ai pu travailler récemment :"
+  },
+  "projects": {
+    "title": "Projets",
+    "otherProjects": "Autres projets"
+  },
+  "projectAchylles": {
+    "role": "Lead développeur",
+    "title": "Achylles",
+    "description": "Application cross-plateforme réalisée pour une agence immobilière. Avec un formulaire en plusieurs étapes et des résultats au format Tinder, cette application propose une méthode de recherche innovante pour votre prochain projet immobilier."
+  },
+  "projectEcoFoodInfo": {
+    "role": "Développeur Full-Stack",
+    "title": "Eco-FoodInfo",
+    "description": "Application cross-plateforme réalisée dans le cadre d'un projet de sensibilisation à la consommation. Avec sa fonctionalité Scan, cette application propose une façon simple d'accéder à {Ecoscore} d'un produit. Inspiré par {Yuka}."
+  },
+  "projectVinted": {
+    "role": "Développeur Full-Stack",
+    "title": "Vinted clone",
+    "description": "Réplique partielle du site Web Vinted, réalisée en React. Contient les fonctionnalités suivantes : authentification, publier et modifier une annonce, rechercher une annonce, payer avec Stripe."
+  },
+  "projectMarvel": {
+    "title": "Marvel - React",
+    "description": "Site Web permettant de rechercher tous les personnages Marvel et leurs BD associées."
+  },
+  "projectCertification": {
+    "title": "Projet de certification Web et Mobile",
+    "description": "Site Web permettant la création et la soumission de formulaires en ligne."
+  },
+  "projectDeliveroo": {
+    "title": "Page restaurant Deliveroo",
+    "description": "Réplique de la page \"restaurants\" du site Web Deliveroo."
+  },
+  "career": {
+    "title": "Parcours",
+    "stepOne": "Développeur Javascript Full-Stack",
+    "stepOneDate": "Sept 2020 – Juin 2021 (10 mois)",
+    "stepOneExpOneTitle": "Eco-FoodInfo",
+    "stepOneExpOneRole": "Développeur Full Stack",
+    "stepOneExpOneDescription": "Application React Native d’aide à la consommation écoresponsable",
+    "stepOneExpTwoTitle": "Achylles",
+    "stepOneExpTwoRole": "Lead développeur",
+    "stepOneExpTwoDescription": "Application React Native pour une agence immobilière",
+    "stepOneExpThreeTitle": "Certification Web et Mobile",
+    "stepOneExpThreeRole": "Le Reacteur",
+    "stepOneExpThreeDescription": "Développeur Javascript Full-Stack",
+    "stepTwo": "Wavestone (conseil IT)",
+    "stepTwoDate": "Sept 2014 – Sept 2019 (5 ans)",
+    "stepTwoExpOneTitle": "Senior Consultant",
+    "stepTwoExpOneRole": "Digital & Emerging technologies",
+    "stepTwoExpOneDate": "Sept 2018 – Sept 2019 (1 an)",
+    "stepTwoExpTwoTitle": "Consultant",
+    "stepTwoExpTwoRole": "Digital & Emerging technologies",
+    "stepTwoExpTwoDate": "Sept 2014 – Sept 2018 (4 ans)",
+    "stepThree": "Diplôme d'Ingénieur du Numérique",
+    "stepThreeDate": "ISEP - 2014"
+  },
+  "contact": {
+    "title": "Entrons en contact",
+    "text": "Je suis actuellement à l'écoute de nouvelles opportunités en tant que développeur React ou React Native. Si vous êtes intéressé par mon profil ou si vous souhaitez me contacter sur un autre sujet, ma boîte mail est toujours ouverte !"
+  },
+  "footer": "Réalisé par {author}"
+}

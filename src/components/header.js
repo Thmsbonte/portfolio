@@ -2,14 +2,15 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import "./header.scss"
 import HeaderMenu from "./headerMenu"
+import { Link } from "gatsby-plugin-intl"
 
 const Header = ({ HEADER_HEIGHT }) => (
   <header className="header" style={{ height: HEADER_HEIGHT }}>
     <div className="header-content">
       <div className="header-left">
-        <a className="header-logo" href="https://thomasbonte.com/">
+        <Link to="/" className="header-logo">
           TB
-        </a>
+        </Link>
       </div>
       <div className="header-right">
         <HeaderMenu HEADER_HEIGHT={HEADER_HEIGHT} />

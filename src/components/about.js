@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import "./about.scss"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
   return (
@@ -9,27 +10,62 @@ const About = ({ SECTION_HEIGHT, HEADER_HEIGHT }) => {
         <div className="content-left">
           <h2>
             {" "}
-            <span className="title-number">01.</span>About me
+            <span className="title-number">01.</span>
+            <FormattedMessage id="about.title" />
           </h2>
           <p>
-            After graduating as a computer science engineer in 2014, I worked 5
-            five years as a digital and emerging technologies consultant at{" "}
-            <a
-              href="https://www.wavestone.com/fr/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Wavestone
-            </a>{" "}
-            before embracing my interest in web development and becoming a
-            full-time software developer.
+            <FormattedMessage
+              id="about.paragraphOne"
+              values={{
+                Wavestone: (
+                  <a
+                    href="https://www.wavestone.com/fr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Wavestone
+                  </a>
+                ),
+                ISEP: (
+                  <a
+                    href="https://www.isep.fr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    l'Institut Supérieur d'Électronique de Paris
+                  </a>
+                ),
+              }}
+            />
           </p>
           <p>
-            Benefiting from my consulting experience, I aim to offer both
-            technical and methodological skills to build high quality products
-            as well as enjoyable digital experiences.
+            <FormattedMessage
+              id="about.paragraphTwo"
+              values={{
+                Javascript: (
+                  <a
+                    href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Javascript
+                  </a>
+                ),
+                React: (
+                  <a
+                    href="https://fr.reactjs.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    React
+                  </a>
+                ),
+              }}
+            />
           </p>
-          <p>Here are a few technologies I've been working with recently: </p>
+          <p>
+            <FormattedMessage id="about.paragraphThree" />{" "}
+          </p>
           <div className="table">
             <div className="column">
               <ul>

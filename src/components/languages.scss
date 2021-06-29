@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.languages {
+  display: flex;
+  button {
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "roboto mono";
+    color: $black;
+    margin-bottom: -5px;
+    color: $mainColor;
+    @media (max-width: $mediumWindow) {
+      font-size: 18px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

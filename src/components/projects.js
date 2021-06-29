@@ -3,14 +3,13 @@ import "./projects.scss"
 import Project from "./project"
 import ProjectReverse from "./projectReverse"
 import { StaticImage } from "gatsby-plugin-image"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 // ACHYLLES APP
 const AchyllesDescription = () => {
   return (
     <p className="project-description">
-      Cross-platform mobile application for French real estate company Achylles.
-      With a multi-step search form and tinder-like results, this app's ambition
-      is to offer an innovative way to look for your next new-build investment.
+      <FormattedMessage id="projectAchylles.description" />
     </p>
   )
 }
@@ -72,21 +71,29 @@ const AchyllesImages = () => {
 const EcofoofInfoDescription = () => {
   return (
     <p className="project-description">
-      Cross-platform mobile application developed as part of a product
-      consumption awarness project. With its scan feature, the app aims to offer
-      an easy way to access to the{" "}
-      <a
-        href="https://docs.score-environnemental.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Éco-score
-      </a>{" "}
-      of a product. Inspired by{" "}
-      <a href="https://yuka.io/" target="_blank" rel="noopener noreferrer">
-        Yuka
-      </a>
-      .
+      <FormattedMessage
+        id="projectEcoFoodInfo.description"
+        values={{
+          Ecoscore: (
+            <a
+              href="https://docs.score-environnemental.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              l'Eco-score
+            </a>
+          ),
+          Yuka: (
+            <a
+              href="https://yuka.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Yuka
+            </a>
+          ),
+        }}
+      />
     </p>
   )
 }
@@ -148,9 +155,7 @@ const EcoFoodInfoImages = () => {
 const VintedDescription = () => {
   return (
     <p className="project-description">
-      Partial clone of Vinted website developed as part of a React and Node.js
-      practicing journey. It contains the following features : Login and Signup,
-      Publish and Modify an offer, Search with filters, Pay and buy with Stripe.
+      <FormattedMessage id="projectVinted.description" />
     </p>
   )
 }
@@ -210,19 +215,20 @@ const Projects = ({ expoModal, setExpoModal }) => {
         <div className="projects-content">
           <h2>
             {" "}
-            <span className="title-number">02.</span>Projects
+            <span className="title-number">02.</span>
+            <FormattedMessage id="projects.title" />
           </h2>
           <Project
-            role={"Technical lead"}
-            title={"Achylles App"}
+            role={<FormattedMessage id="projectAchylles.role" />}
+            title={<FormattedMessage id="projectAchylles.title" />}
             description={<AchyllesDescription />}
             stack={<AchyllesStack />}
             githubURI={"https://github.com/Thmsbonte/Achylles-Application"}
             images={<AchyllesImages />}
           />
           <ProjectReverse
-            role={"Full-Stack developer"}
-            title={"Eco-FoodInfo"}
+            role={<FormattedMessage id="projectEcoFoodInfo.role" />}
+            title={<FormattedMessage id="projectEcoFoodInfo.title" />}
             description={<EcofoofInfoDescription />}
             stack={<EcoFoodInfoStack />}
             githubURI={"https://github.com/Thmsbonte/EFI-frontend"}
@@ -232,8 +238,8 @@ const Projects = ({ expoModal, setExpoModal }) => {
             expoModal={expoModal}
           />
           <Project
-            role={"Full-Stack developer"}
-            title={"Vinted clone"}
+            role={<FormattedMessage id="projectVinted.role" />}
+            title={<FormattedMessage id="projectVinted.title" />}
             description={<VintedDescription />}
             stack={<VintedStack />}
             githubURI={"https://github.com/Thmsbonte/vinted-frontend"}

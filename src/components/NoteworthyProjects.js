@@ -1,16 +1,22 @@
 import * as React from "react"
 import "./noteworthy-projects.scss"
 import NoteworthyProject from "./NoteworthyProject"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 // MARVEL
 const TitleMarvel = () => {
-  return <h5 className="title">Marvel - React</h5>
+  return (
+    <h5 className="title">
+      {" "}
+      <FormattedMessage id="projectMarvel.title" />
+    </h5>
+  )
 }
 
 const DescriptionMarvel = () => {
   return (
     <p className="description">
-      A website alowing the search of all Marvel characters and related comics.
+      <FormattedMessage id="projectMarvel.description" />
     </p>
   )
 }
@@ -25,13 +31,18 @@ const StackMarvel = () => {
 
 // CERTIFICATION
 const TitleCertification = () => {
-  return <h5 className="title">Web and Mobile certification project</h5>
+  return (
+    <h5 className="title">
+      {" "}
+      <FormattedMessage id="projectCertification.title" />
+    </h5>
+  )
 }
 
 const DescriptionCertification = () => {
   return (
     <p className="description">
-      A website permiting the creation and submission of online forms.
+      <FormattedMessage id="projectCertification.description" />
     </p>
   )
 }
@@ -46,13 +57,17 @@ const StackCertification = () => {
 
 // DELIVEROO
 const TitleDeliveroo = () => {
-  return <h5 className="title">Deliveroo's restaurant front page clone</h5>
+  return (
+    <h5 className="title">
+      <FormattedMessage id="projectDeliveroo.title" />
+    </h5>
+  )
 }
 
 const DescriptionDeliveroo = () => {
   return (
     <p className="description">
-      Clone of Deliveroo's restaurant front page. Frontend only.
+      <FormattedMessage id="projectDeliveroo.description" />
     </p>
   )
 }
@@ -68,7 +83,9 @@ const StackDeliveroo = () => {
 const NoteworthyProjects = () => {
   return (
     <div className="noteworthy-projects">
-      <h4>Other Projects</h4>
+      <h4>
+        <FormattedMessage id="projects.otherProjects" />
+      </h4>
       <div className="noteworthy-content">
         <NoteworthyProject
           title={<TitleMarvel />}

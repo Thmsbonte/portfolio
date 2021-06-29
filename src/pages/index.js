@@ -19,9 +19,18 @@ import {
   faExternalLinkAlt,
   faBars,
   faTimes,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons"
 import Career from "../components/career"
-library.add(faLinkedin, faGithub, faExternalLinkAlt, faReact, faBars, faTimes)
+library.add(
+  faLinkedin,
+  faGithub,
+  faExternalLinkAlt,
+  faReact,
+  faBars,
+  faTimes,
+  faChevronDown
+)
 
 const IndexPage = () => {
   const [WINDOW_HEIGHT, setWINDOW_HEIGHT] = React.useState(760) // Default windows height

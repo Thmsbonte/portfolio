@@ -2,6 +2,7 @@ import * as React from "react"
 import "./career.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { StaticImage } from "gatsby-plugin-image"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 const Career = () => {
   return (
@@ -10,7 +11,8 @@ const Career = () => {
       <div className="career">
         <div className="career-content">
           <h2>
-            <span className="title-number">03.</span>Career
+            <span className="title-number">03.</span>
+            <FormattedMessage id="career.title" />
           </h2>
           <div className="career-journey">
             <div className="career-journey-content">
@@ -24,10 +26,10 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p1">
-                    Full-Stack Javascript/Typescript developer
+                    <FormattedMessage id="career.stepOne" />
                   </p>
                   <p className="career-text">
-                    Sept 2020 – June 2021 (10 months)
+                    <FormattedMessage id="career.stepOneDate" />
                   </p>
                 </div>
               </div>
@@ -38,11 +40,13 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p2">
-                    Eco-FoodInfo - <span>Full-Stack developer</span>{" "}
+                    <FormattedMessage id="career.stepOneExpOneTitle" /> -{" "}
+                    <span>
+                      <FormattedMessage id="career.stepOneExpOneRole" />
+                    </span>{" "}
                   </p>
                   <p className="career-text">
-                    React-Native mobile application to scan and get the
-                    Eco-score of a product
+                    <FormattedMessage id="career.stepOneExpOneDescription" />
                   </p>
                 </div>
               </div>
@@ -53,11 +57,13 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p2">
-                    Achylles - <span>Lead developer</span>
+                    <FormattedMessage id="career.stepOneExpTwoTitle" /> -{" "}
+                    <span>
+                      <FormattedMessage id="career.stepOneExpTwoRole" />
+                    </span>
                   </p>
                   <p className="career-text">
-                    React-Native mobile application for French real estate
-                    company
+                    <FormattedMessage id="career.stepOneExpTwoDescription" />
                   </p>
                 </div>
               </div>
@@ -68,9 +74,12 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p2">
-                    Web and mobile certification - Le Reacteur
+                    <FormattedMessage id="career.stepOneExpThreeTitle" /> -{" "}
+                    <FormattedMessage id="career.stepOneExpThreeRole" />
                   </p>
-                  <p className="career-text">Full-Stack JavaScript developer</p>
+                  <p className="career-text">
+                    <FormattedMessage id="career.stepOneExpThreeDescription" />
+                  </p>
                 </div>
               </div>
               <div className="row first-row">
@@ -83,8 +92,12 @@ const Career = () => {
                   />
                 </div>
                 <div className="block block-right">
-                  <p className="career-p1">Wavestone (conseil IT)</p>
-                  <p className="career-text">Sept 2014 - Sept 2019 (5 years)</p>
+                  <p className="career-p1">
+                    <FormattedMessage id="career.stepTwo" />
+                  </p>
+                  <p className="career-text">
+                    <FormattedMessage id="career.stepTwoDate" />
+                  </p>
                 </div>
               </div>
               <div className="row">
@@ -94,9 +107,12 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p2">
-                    Senior Consultant - Digital & Emerging technologies
+                    <FormattedMessage id="career.stepTwoExpOneTitle" /> -{" "}
+                    <FormattedMessage id="career.stepTwoExpOneRole" />
                   </p>
-                  <p className="career-text">Sept 2018 – Sept 2019 (1 year)</p>
+                  <p className="career-text">
+                    <FormattedMessage id="career.stepTwoExpOneDate" />
+                  </p>
                 </div>
               </div>
               <div className="row">
@@ -106,9 +122,12 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p2">
-                    Consultant - Digital & Emerging technologies
+                    <FormattedMessage id="career.stepTwoExpTwoTitle" /> -{" "}
+                    <FormattedMessage id="career.stepTwoExpTwoRole" />
                   </p>
-                  <p className="career-text">Sept 2014 – Sept 2018 (4 years)</p>
+                  <p className="career-text">
+                    <FormattedMessage id="career.stepTwoExpTwoDate" />{" "}
+                  </p>
                 </div>
               </div>
 
@@ -122,8 +141,12 @@ const Career = () => {
                   />
                 </div>
                 <div className="block block-right">
-                  <p className="career-p1">Computer science degree</p>
-                  <p className="career-text">ISEP - 2014</p>
+                  <p className="career-p1">
+                    <FormattedMessage id="career.stepThree" />
+                  </p>
+                  <p className="career-text">
+                    <FormattedMessage id="career.stepThreeDate" />
+                  </p>
                 </div>
               </div>
             </div>
