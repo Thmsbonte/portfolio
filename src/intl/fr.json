@@ -17,7 +17,7 @@
   "about": {
     "title": "À propos de moi",
     "paragraphOne": "Diplômé de {ISEP} en 2014, j'ai travaillé 5 ans à {Wavestone} en tant que chef de projet IT avant d'évoluer vers le poste de développeur web et mobile en septembre 2020.",
-    "paragraphTwo": "Spécialisé en Javascript et React, j'ai la volonté d'associer une expertise technique avec des compétences IT transverses pour construire des applications performantes répondant aux enjeux de sécurité, d'accessibilité et d'évolutivité du monde du numérique.",
+    "paragraphTwo": "Spécialisé en Javascript et React, j'ai la volonté d'associer une expertise technique avec des compétences IT transverses pour construire des applications performantes répondant aux enjeux de sécurité, d'accessibilité et d'évolutivité du monde numérique.",
     "paragraphThree": "Quelques technologies avec lesquelles j'ai pu travailler récemment :"
   },
   "projects": {
@@ -77,7 +77,7 @@
   },
   "contact": {
     "title": "Entrons en contact",
-    "text": "Je suis actuellement à l'écoute de nouvelles opportunités en tant que développeur React ou React Native. Si vous êtes intéressé par mon profil ou si vous souhaitez me contacter sur un autre sujet, ma boîte mail est toujours ouverte !"
+    "text": "Je suis actuellement à l'écoute de nouvelles opportunités en tant que développeur React ou React Native. Si vous êtes intéressé par mon profil ou si vous souhaitez me contacter sur un autre sujet, n'hésitez pas à me contacter !"
   },
   "footer": "Réalisé par {author}"
 }
