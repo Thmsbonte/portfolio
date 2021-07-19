@@ -2,7 +2,7 @@
   "presentation": {
     "mynameis": "Bonjour, je m'appelle",
     "subtitle": "Développeur {Javascript} Full Stack",
-    "text": "Je suis développeur web et mobile, spécialisé en Javascript et React. Acteur de la transformation digitale, je suis actuellement à l'écoute de nouvelles opportunités en tant que développeur {React} ou {ReactNative}."
+    "text": "Spécialisé en Javascript et React, je m'appuie sur mon expérience en gestion de projet pour proposer des solutions techniques qui répondent aux enjeux produit. Je suis actuellement à l'écoute de nouvelles opportunités en tant que développeur {React} ou {ReactNative}."
   },
   "button": {
     "getintouch": "Contact",
@@ -17,7 +17,7 @@
   "about": {
     "title": "À propos de moi",
     "paragraphOne": "Diplômé de {ISEP} en 2014, j'ai travaillé 5 ans à {Wavestone} en tant que chef de projet IT avant d'évoluer vers le poste de développeur web et mobile en septembre 2020.",
-    "paragraphTwo": "Spécialisé en Javascript et React, j'ai la volonté d'associer une expertise technique avec des compétences IT transverses pour construire des applications performantes répondant aux enjeux de sécurité, d'accessibilité et d'évolutivité du monde numérique.",
+    "paragraphTwo": "Spécialisé en Javascript et React, j'ai la volonté d'associer une expertise technique avec des compétences IT transverses pour développer des applications performantes répondant aux enjeux de sécurité, d'accessibilité et d'évolutivité du monde numérique.",
     "paragraphThree": "Quelques technologies avec lesquelles j'ai pu travailler récemment :"
   },
   "projects": {
