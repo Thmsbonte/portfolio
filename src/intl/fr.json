@@ -51,6 +51,16 @@
     "title": "Page restaurant Deliveroo",
     "description": "Réplique de la page \"restaurants\" du site Web Deliveroo."
   },
+  "expoModal": {
+    "title": "Essayez-moi avec {ExpoGo} :",
+    "presentation": "EcoFoodInfo n'est pas disponible sur les stores. Il est cependant possible de l'essayer avec l'application {ExpoGo}. Assurez-vous de l'avoir téléchargée sur votre téléphone avant de suivre les instructions ci-dessous :",
+    "androidFirstStep": "Cliquez sur le lien ci-dessous et suivez les instructions de la page",
+    "androidSecondStep": "Sur EcoFoodInfo, créez un compte ou utilisez le compte générique :",
+    "email": "Email : user@test.com",
+    "password": "Mot de passe : Azerty01!",
+    "iphoneStep": "Pour l'ouvrir avec un Iphone, il faut d'abord se connecter au compte ExpoGo de EcoFoodInfo. Envoyez-moi un email pour que je puisse vous partager les informations du compte.",
+    "button": "Essayer"
+  },
   "career": {
     "title": "Parcours",
     "stepOne": "Développeur Javascript Full-Stack",

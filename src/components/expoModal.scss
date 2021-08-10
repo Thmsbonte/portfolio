@@ -15,8 +15,7 @@
     position: relative;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: clamp(20px, 550px, 90%);
-    // max-height: 95%;
+    width: clamp(20px, 650px, 90%);
     background-color: white;
     padding-left: 20px;
     padding-top: 20px;
@@ -40,6 +39,9 @@
       h4 {
         margin-top: 20px;
         margin-bottom: 15px;
+      }
+      .generic-credentials {
+        margin-left: 20px;
       }
       .expo-button {
         display: flex;

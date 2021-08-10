@@ -2,6 +2,7 @@ import * as React from "react"
 import "./expoModal.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Button from "./Button"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 const ExpoModal = ({ setExpoModal, expoModal }) => {
   return (
@@ -18,38 +19,59 @@ const ExpoModal = ({ setExpoModal, expoModal }) => {
         </div>
         <div className="expo-modal-main">
           <p>
-            Try me with <strong>ExpoGo</strong> :
+            <FormattedMessage
+              id="expoModal.title"
+              values={{
+                ExpoGo: <strong>ExpoGo</strong>,
+              }}
+            />
           </p>
           <p className="expo-modal-presentation">
-            EcoFoodInfo is not available on the stores. Yet it is possible to
-            try it through <strong>ExpoGo</strong> application. Make sure you
-            have it downloaded on your phone before following the instructions
-            below :
+            <FormattedMessage
+              id="expoModal.presentation"
+              values={{
+                ExpoGo: <strong>ExpoGo</strong>,
+              }}
+            />
           </p>
           <div className="phone android">
             <h4>Android</h4>
-            <p>1. Click on the link below </p>
-            <p>2. Follow the page's instructions</p>
+            <p>
+              1. <FormattedMessage id="expoModal.androidFirstStep" />{" "}
+            </p>
+            <p>
+              2. <FormattedMessage id="expoModal.androidSecondStep" />
+            </p>
+            <div className="generic-credentials">
+              <p>
+                - <FormattedMessage id="expoModal.email" />
+              </p>
+              <p>
+                - <FormattedMessage id="expoModal.password" />
+              </p>
+            </div>
+
             <div className="expo-button">
               <a
                 href="https://expo.io/@ecofoodinfo/Eco-FoodInfo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button text="Try me" style={{ minWidth: 115 }} />
+                <Button
+                  text={<FormattedMessage id="expoModal.button" />}
+                  style={{ minWidth: 115 }}
+                />
               </a>
             </div>
           </div>
           <div className="phone iphone">
             <h4>Iphone</h4>
             <p>
-              To open it with an Iphone, you first need to connect to the
-              EcoFoodInfo ExpoGo account. Please email-me a request so I can
-              share with you the credentials.
+              <FormattedMessage id="expoModal.iphoneStep" />
             </p>
             <div className="expo-button">
               <a href="mailto:thms.bonte@gmail.com">
-                <Button text="Email me" style={{ minWidth: 115 }} />
+                <Button text="Email" style={{ minWidth: 115 }} />
               </a>
             </div>
           </div>

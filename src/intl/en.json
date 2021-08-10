@@ -51,6 +51,16 @@
     "title": "Deliveroo's restaurant front page clone",
     "description": "Clone of Deliveroo's restaurants front page. Frontend only."
   },
+  "expoModal": {
+    "title": "Try me with {ExpoGo} :",
+    "presentation": "EcoFoodInfo is not available on the stores. Yet it is possible to try it through {ExpoGo} application. Make sure you have it downloaded on your phone before following the instructions below :",
+    "androidFirstStep": "Click on the link below and follow the page's instructions",
+    "androidSecondStep": "On EcoFoodInfo, create a user account or use the generic account :",
+    "email": "Email : user@test.com",
+    "password": "Password : Azerty01!",
+    "iphoneStep": "To open it with an Iphone, you first need to connect to the EcoFoodInfo ExpoGo account. Please email-me a request so I can share with you the credentials.",
+    "button": "Try me"
+  },
   "career": {
     "title": "Career",
     "stepOne": "Full-Stack Javascript developer",
