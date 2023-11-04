@@ -25,9 +25,11 @@ const ProjectReverse = ({
           {description}
           {stack}
           <div className="project-footer">
-            <a href={githubURI} target="_blank" rel="noopener noreferrer">
-              <GithubLogo className="github-logo" />
-            </a>
+            {githubURI && (
+              <a href={githubURI} target="_blank" rel="noopener noreferrer">
+                <GithubLogo className="github-logo" />
+              </a>
+            )}
             {tryMe && (
               <a
                 className="try-me"

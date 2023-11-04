@@ -40,6 +40,23 @@ const Career = () => {
                 </div>
                 <div className="block block-right">
                   <p className="career-p2">
+                    <FormattedMessage id="career.stepOneExpThreeTitle" /> -{" "}
+                    <span>
+                      <FormattedMessage id="career.stepOneExpThreeRole" />
+                    </span>{" "}
+                  </p>
+                  <p className="career-text">
+                    <FormattedMessage id="career.stepOneExpThreeDescription" />
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="middle">
+                  <div className="round"></div>
+                  <div className="middle-trait"></div>
+                </div>
+                <div className="block block-right">
+                  <p className="career-p2">
                     <FormattedMessage id="career.stepOneExpOneTitle" /> -{" "}
                     <span>
                       <FormattedMessage id="career.stepOneExpOneRole" />
@@ -64,21 +81,6 @@ const Career = () => {
                   </p>
                   <p className="career-text">
                     <FormattedMessage id="career.stepOneExpTwoDescription" />
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="middle">
-                  <div className="round"></div>
-                  <div className="middle-trait"></div>
-                </div>
-                <div className="block block-right">
-                  <p className="career-p2">
-                    <FormattedMessage id="career.stepOneExpThreeTitle" /> -{" "}
-                    <FormattedMessage id="career.stepOneExpThreeRole" />
-                  </p>
-                  <p className="career-text">
-                    <FormattedMessage id="career.stepOneExpThreeDescription" />
                   </p>
                 </div>
               </div>

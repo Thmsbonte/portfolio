@@ -8,7 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-fontawesome-css`,
+    // `gatsby-plugin-fontawesome-css`
     {
       resolve: `gatsby-plugin-intl`,
       options: {

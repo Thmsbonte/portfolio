@@ -80,6 +80,31 @@ const StackDeliveroo = () => {
   )
 }
 
+// VINTED
+const TitleVinted = () => {
+  return (
+    <h5 className="title">
+      <FormattedMessage id="projectVinted.title" />
+    </h5>
+  )
+}
+
+const DescriptionVinted = () => {
+  return (
+    <p className="description">
+      <FormattedMessage id="projectVinted.descriptionSimple" />
+    </p>
+  )
+}
+
+const StackVinted = () => {
+  return (
+    <div className="stack">
+      <p>React Node.js MongoDB</p>
+    </div>
+  )
+}
+
 const NoteworthyProjects = () => {
   return (
     <div className="noteworthy-projects">
@@ -87,6 +112,13 @@ const NoteworthyProjects = () => {
         <FormattedMessage id="projects.otherProjects" />
       </h4>
       <div className="noteworthy-content">
+        <NoteworthyProject
+          title={<TitleVinted />}
+          description={<DescriptionVinted />}
+          stack={<StackVinted />}
+          githubURI="https://github.com/Thmsbonte/vinted-frontend"
+          tryMe="https://thmsbonte-vinted.netlify.app/"
+        />
         <NoteworthyProject
           title={<TitleMarvel />}
           description={<DescriptionMarvel />}
@@ -101,13 +133,13 @@ const NoteworthyProjects = () => {
           githubURI="https://github.com/Thmsbonte/tellmemore-frontend"
           tryMe="https://tellmemore-thmsbonte.netlify.app/"
         />
-        <NoteworthyProject
+        {/* <NoteworthyProject
           title={<TitleDeliveroo />}
           description={<DescriptionDeliveroo />}
           stack={<StackDeliveroo />}
           githubURI="https://github.com/Thmsbonte/reacteur-deliveroo-frontend"
           tryMe="https://thmsbonte-deliveroo.netlify.app/"
-        />
+        /> */}
       </div>
     </div>
   )

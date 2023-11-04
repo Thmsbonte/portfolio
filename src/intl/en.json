@@ -2,7 +2,7 @@
   "presentation": {
     "mynameis": "Hi, my name is",
     "subtitle": "Full Stack {Javascript} developer",
-    "text": "I am a Paris-based software engineer specialized in JavaScript and React. Enthusiast with new challenges, I am currently open to new opportunities as a {React} or {ReactNative} software developer."
+    "text": "I am a Paris-based software engineer specialized in JavaScript and React. Enthusiast with new challenges, feel free to contact me for new opportunities as a {React} or {ReactNative} software developer."
   },
   "button": {
     "getintouch": "Get In Touch",
@@ -24,6 +24,16 @@
     "title": "Projects",
     "otherProjects": "Other projects"
   },
+  "projectVisiteTechnique": {
+    "role": "Lead développeur",
+    "title": "Tucoenergie - Technical visit",
+    "description": "Web application for Tucoenergie's technicians allowing to achieve the pre-installation technical visit entirely on a tablet."
+  },
+  "projectPrequalif": {
+    "role": "Lead developer",
+    "title": "Tucoenergie - Acquiring form",
+    "description": "Web form allowing to generate leads for Tucoenergie's commercial team. Designed in a modular way, its architecture answers to the evolutivity need of the growth departement."
+  },
   "projectAchylles": {
     "role": "Technical lead",
     "title": "Achylles App",
@@ -37,7 +47,8 @@
   "projectVinted": {
     "role": "Full-Stack developer",
     "title": "Vinted clone",
-    "description": "Partial clone of Vinted website developed as part of a React and Node.js practicing journey. It contains the following features : Login and Signup, Publish and Modify an offer, Search with filters, Pay and buy with Stripe."
+    "description": "Partial clone of Vinted website developed as part of a React and Node.js practicing journey. It contains the following features : Login and Signup, Publish and Modify an offer, Search with filters, Pay and buy with Stripe.",
+    "descriptionSimple": "Partial clone of Vinted website developed as part of a React and Node.js practicing journey."
   },
   "projectMarvel": {
     "title": "Marvel - React",
@@ -64,16 +75,16 @@
   "career": {
     "title": "Career",
     "stepOne": "Full-Stack Javascript developer",
-    "stepOneDate": "Sept 2020 – August 2021 (1 year)",
+    "stepOneDate": "Sept 2020 – Sep 2022 (2 years)",
     "stepOneExpOneTitle": "Eco-FoodInfo",
     "stepOneExpOneRole": "Full Stack developer",
     "stepOneExpOneDescription": "React-Native mobile application to scan and get the Eco-score of a product",
     "stepOneExpTwoTitle": "Achylles",
-    "stepOneExpTwoRole": "Lead développeur",
+    "stepOneExpTwoRole": "Lead developer",
     "stepOneExpTwoDescription": "React-Native mobile application for French real estate company",
-    "stepOneExpThreeTitle": "Certification Web et Mobile",
-    "stepOneExpThreeRole": "Le Reacteur",
-    "stepOneExpThreeDescription": "Full-Stack JavaScript developer",
+    "stepOneExpThreeTitle": "Tucoenergie",
+    "stepOneExpThreeRole": "Front-End developer",
+    "stepOneExpThreeDescription": "Development of new web services : customer area, acquiring form, Web-App for technicians, institutional website.",
     "stepTwo": "Wavestone (conseil IT)",
     "stepTwoDate": "Sept 2014 - Sept 2019 (5 years)",
     "stepTwoExpOneTitle": "Senior Consultant",
@@ -87,7 +98,7 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "text": "I am currently open to new opportunities as React or React Native developer. Whether you are interested in my profile or you want to contact me for any other subject, my inbox is always open. I will get back to you as soon as possible!"
+    "text": "Whether you are interested in my profile or you want to contact me for any other subject, my inbox is always open. I will get back to you as soon as possible!"
   },
   "footer": "Built by {author}"
 }

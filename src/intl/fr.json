@@ -24,6 +24,16 @@
     "title": "Projets",
     "otherProjects": "Autres projets"
   },
+  "projectPrequalif": {
+    "role": "Lead développeur",
+    "title": "Tucoenergie - Acquisition",
+    "description": "Formulaire conçu pour préqualifier le besoin du client sur les 5 offres de Tucoenergie et générer des leads pour l'équipe commerciale. Pensé de manière modulable, son architecture permet de répondre au besoin d'évolutivité du pôle acquisition."
+  },
+  "projectVisiteTechnique": {
+    "role": "Lead développeur",
+    "title": "Tucoenergie - Visite technique",
+    "description": "Application Web à destination des techniciens de Tucoenergie permettant de réaliser la visite technique de pré-installation sur tablette, de manière totalement digitalisée."
+  },
   "projectAchylles": {
     "role": "Lead développeur",
     "title": "Achylles",
@@ -37,7 +47,8 @@
   "projectVinted": {
     "role": "Développeur Full-Stack",
     "title": "Vinted clone",
-    "description": "Réplique partielle du site Web Vinted, réalisée en React. Contient les fonctionnalités suivantes : authentification, publier et modifier une annonce, rechercher une annonce, payer avec Stripe."
+    "description": "Réplique partielle du site Web Vinted, réalisée en React. Contient les fonctionnalités suivantes : authentification, publier et modifier une annonce, rechercher une annonce, payer avec Stripe.",
+    "descriptionSimple": "Réplique partielle du site Web Vinted, réalisée en React."
   },
   "projectMarvel": {
     "title": "Marvel - React",
@@ -64,16 +75,16 @@
   "career": {
     "title": "Parcours",
     "stepOne": "Développeur Javascript Full-Stack",
-    "stepOneDate": "Sept 2020 – Août 2021 (1 an)",
+    "stepOneDate": "Sept 2020 – Sept 2022 (2 ans)",
     "stepOneExpOneTitle": "Eco-FoodInfo",
     "stepOneExpOneRole": "Développeur Full Stack",
     "stepOneExpOneDescription": "Application React Native d’aide à la consommation écoresponsable",
     "stepOneExpTwoTitle": "Achylles",
     "stepOneExpTwoRole": "Lead développeur",
     "stepOneExpTwoDescription": "Application React Native pour une agence immobilière",
-    "stepOneExpThreeTitle": "Certification Web et Mobile",
-    "stepOneExpThreeRole": "Le Reacteur",
-    "stepOneExpThreeDescription": "Développeur Javascript Full-Stack",
+    "stepOneExpThreeTitle": "Tucoenergie",
+    "stepOneExpThreeRole": "Développeur Front-End",
+    "stepOneExpThreeDescription": "Développement des nouveaux services Web : portail client, parcours d'acquisition, application pour les visites techniques, site institutionnel.",
     "stepTwo": "Wavestone (conseil IT)",
     "stepTwoDate": "Sept 2014 – Sept 2019 (5 ans)",
     "stepTwoExpOneTitle": "Senior Consultant",
@@ -87,7 +98,7 @@
   },
   "contact": {
     "title": "Entrons en contact",
-    "text": "Je suis actuellement à l'écoute de nouvelles opportunités en tant que développeur React ou React Native. Si vous êtes intéressé par mon profil ou si vous souhaitez me joindre sur un autre sujet, n'hésitez pas à me contacter !"
+    "text": "Si vous êtes intéressé par mon profil ou si vous souhaitez me joindre sur un autre sujet, n'hésitez pas à me contacter !"
   },
   "footer": "Réalisé par {author}"
 }

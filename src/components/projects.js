@@ -208,6 +208,104 @@ const VintedImages = () => {
   )
 }
 
+const PrequalifDescription = () => {
+  return (
+    <p className="project-description">
+      <FormattedMessage id="projectPrequalif.description" />
+    </p>
+  )
+}
+
+const PrequalifStack = () => {
+  return (
+    <p className="stack">
+      <span>
+        <a
+          href="https://fr.reactjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React
+        </a>
+      </span>
+      <span>-</span>
+      <span>
+        <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
+          Next.js
+        </a>
+      </span>
+      <span>-</span>
+      <span>
+        <a
+          href="https://www.typescriptlang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Typescript
+        </a>
+      </span>
+    </p>
+  )
+}
+
+const PrequalifImages = () => {
+  return (
+    <div className="project-images">
+      <StaticImage
+        src="../images/tucoenergie/prequalif.png"
+        width={550}
+        alt="Prequalif"
+      />
+    </div>
+  )
+}
+
+const VisiteTechniqueDescription = () => {
+  return (
+    <p className="project-description">
+      <FormattedMessage id="projectVisiteTechnique.description" />
+    </p>
+  )
+}
+
+const VisiteTechniqueStack = () => {
+  return (
+    <p className="stack">
+      <span>
+        <a
+          href="https://fr.reactjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React
+        </a>
+      </span>
+      <span>-</span>
+      <span>
+        <a
+          href="https://www.typescriptlang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Typescript
+        </a>
+      </span>
+    </p>
+  )
+}
+
+const VisiteTechniqueImages = () => {
+  return (
+    <div className="project-images border-radius">
+      <StaticImage
+        src="../images/tucoenergie/technical-visit-desktop-6ade165316d447fc1aa90249def69065.webp"
+        width={550}
+        alt="visit-technique"
+      />
+    </div>
+  )
+}
+
 const Projects = ({ expoModal, setExpoModal }) => {
   return (
     <>
@@ -218,6 +316,22 @@ const Projects = ({ expoModal, setExpoModal }) => {
             <span className="title-number">02.</span>
             <FormattedMessage id="projects.title" />
           </h2>
+          <Project
+            role={<FormattedMessage id="projectPrequalif.role" />}
+            title={<FormattedMessage id="projectPrequalif.title" />}
+            description={<PrequalifDescription />}
+            stack={<PrequalifStack />}
+            tryMe="https://www.tucoenergie.fr/"
+            images={<PrequalifImages />}
+          />
+          <ProjectReverse
+            role={<FormattedMessage id="projectVisiteTechnique.role" />}
+            title={<FormattedMessage id="projectVisiteTechnique.title" />}
+            description={<VisiteTechniqueDescription />}
+            stack={<VisiteTechniqueStack />}
+            tryMe="https://roujoine-prod.azurewebsites.net/"
+            images={<VisiteTechniqueImages />}
+          />
           <Project
             role={<FormattedMessage id="projectAchylles.role" />}
             title={<FormattedMessage id="projectAchylles.title" />}
@@ -237,7 +351,7 @@ const Projects = ({ expoModal, setExpoModal }) => {
             setExpoModal={setExpoModal}
             expoModal={expoModal}
           />
-          <Project
+          {/* <Project
             role={<FormattedMessage id="projectVinted.role" />}
             title={<FormattedMessage id="projectVinted.title" />}
             description={<VintedDescription />}
@@ -245,7 +359,7 @@ const Projects = ({ expoModal, setExpoModal }) => {
             githubURI={"https://github.com/Thmsbonte/vinted-frontend"}
             images={<VintedImages />}
             tryMe="https://thmsbonte-vinted.netlify.app/"
-          />
+          /> */}
         </div>
       </div>
     </>
