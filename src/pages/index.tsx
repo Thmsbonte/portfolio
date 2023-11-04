@@ -29,7 +29,7 @@ library.add(
   faReact,
   faBars,
   faTimes,
-  faChevronDown
+  faChevronDown,
 )
 
 const IndexPage = () => {
@@ -41,10 +41,13 @@ const IndexPage = () => {
   }, [])
 
   React.useEffect(() => {
-    if (expoModal) {
-      document.getElementById("app-root").style.filter = "blur(3px)"
-    } else {
-      document.getElementById("app-root").style.filter = "blur(0px)"
+    const element = document.getElementById("app-root")
+    if (element) {
+      if (expoModal) {
+        element.style.filter = "blur(3px)"
+      } else {
+        element.style.filter = "blur(0px)"
+      }
     }
   }, [expoModal])
 
@@ -57,22 +60,20 @@ const IndexPage = () => {
       {expoModal && (
         <ExpoModal setExpoModal={setExpoModal} expoModal={expoModal} />
       )}
-      <FixedLayout>
-        <Layout FOOTER_HEIGHT={FOOTER_HEIGHT} HEADER_HEIGHT={HEADER_HEIGHT}>
-          <Seo title="Thomas Bonte" />
-          <Presentation SECTION_HEIGHT={WINDOW_HEIGHT} />
-          <About
-            SECTION_HEIGHT={SECTION_HEIGHT}
-            HEADER_HEIGHT={HEADER_HEIGHT}
-          />
-          <Projects expoModal={expoModal} setExpoModal={setExpoModal} />
-          <NoteworthyProjects />
-          <Career />
-          <Contact
-            SECTION_HEIGHT={WINDOW_HEIGHT - HEADER_HEIGHT - FOOTER_HEIGHT}
-          />
-        </Layout>
-      </FixedLayout>
+      {/* <FixedLayout> */}
+
+      <Seo title="Sandra & Thomas 2024" />
+      <Presentation SECTION_HEIGHT={WINDOW_HEIGHT} />
+      <Layout FOOTER_HEIGHT={FOOTER_HEIGHT} HEADER_HEIGHT={HEADER_HEIGHT}>
+        <About SECTION_HEIGHT={SECTION_HEIGHT} HEADER_HEIGHT={HEADER_HEIGHT} />
+        <Projects expoModal={expoModal} setExpoModal={setExpoModal} />
+        <NoteworthyProjects />
+        <Career />
+        <Contact
+          SECTION_HEIGHT={WINDOW_HEIGHT - HEADER_HEIGHT - FOOTER_HEIGHT}
+        />
+      </Layout>
+      {/* </FixedLayout> */}
     </>
   )
 }

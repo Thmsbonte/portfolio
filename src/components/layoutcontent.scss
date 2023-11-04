@@ -2,14 +2,7 @@
 main {
   margin: 0 auto;
   padding: 0 150px;
-  max-width: $largeWindow;
-  @media (max-width: $largeWindow) {
-    padding: 0 100px;
-  }
-  @media (max-width: $mediumWindow) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+  background-color: white;
   .title-number {
     font-family: "roboto mono";
     font-size: 20px;

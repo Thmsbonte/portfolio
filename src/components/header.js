@@ -9,7 +9,7 @@ const Header = ({ HEADER_HEIGHT }) => (
     <div className="header-content">
       <div className="header-left">
         <Link to="/" className="header-logo">
-          TB
+          S<span>&</span>T
         </Link>
       </div>
       <div className="header-right">

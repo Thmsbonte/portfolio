@@ -25,14 +25,18 @@
     .header-logo {
       border-radius: 50%;
       background-color: $mainColor;
-      height: 40px;
-      width: 40px;
+      height: 45px;
+      width: 45px;
       font-size: 20px;
-      font-family: "roboto mono";
+      font-family: "Merienda", cursive;
       color: white;
       display: flex;
       justify-content: center;
       align-items: center;
+      span {
+        font-size: 0.6rem;
+        color: antiquewhite;
+      }
     }
   }
   .header-right {

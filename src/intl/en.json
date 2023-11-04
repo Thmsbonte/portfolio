@@ -1,8 +1,8 @@
 {
   "presentation": {
-    "mynameis": "Hi, my name is",
-    "subtitle": "Full Stack {Javascript} developer",
-    "text": "I am a Paris-based software engineer specialized in JavaScript and React. Enthusiast with new challenges, feel free to contact me for new opportunities as a {React} or {ReactNative} software developer."
+    "welcomemessage": "We are getting married!",
+    "subtitle": "15th of june 2024 - {Bilbao}",
+    "text": "And we can't wait to celebrate this with you"
   },
   "button": {
     "getintouch": "Get In Touch",
